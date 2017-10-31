@@ -1,4 +1,5 @@
 Esto es una prueba de github
+<<<<<<< HEAD
 
 gx
 c
@@ -6,3 +7,7 @@ vgxc
 v
 c
 v
+=======
+oli
+>>>>>>> 2f7856a48bb5496c210e3959d0b36299b45fa84c
+gfdgdfgsdfgsdf
