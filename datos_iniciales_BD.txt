@@ -1,0 +1,37 @@
+Universidad:
+INSERT INTO public."Universidad"
+Values ('Universidad de Villamayor', 'calle de la universidad s/n',987654321, 'uvm@uvm.es',null,'uvm.es');
+
+Facultad:
+insert into public."Facultad"
+values ('Escuela Politecnica Superior', 'calle de la politecnica s/n', 84522, 951847623, null, 'espolitecnica@uvm.es','Universidad de Villamayor');
+
+Carrera:
+insert into public."Carrera"
+values ('Grado en Ingenieria Informatica', 'II1', 180, 45, 15, 'calle de la politecnica s/n', 'Universidad de Villamayor'); 
+
+Aulas:
+insert into public."Aula"
+values ('Lunes','10:00',75,'calle de la politecnica s/n', 'Universidad de Villamayor',8, 'A1');
+
+insert into public."Aula"
+values ('Martes','10:00',75,'calle de la politecnica s/n', 'Universidad de Villamayor',8,'A2');
+
+insert into public."Aula"
+values ('Miercoles','10:00',75,'calle de la politecnica s/n', 'Universidad de Villamayor',8,'A3');
+
+insert into public."Aula"
+values ('Jueves','10:00',75,'calle de la politecnica s/n', 'Universidad de Villamayor',8,'A4');
+
+Asignaturas:
+insert into public."Asignaturas"
+values ('Estadistica','ob',6, 60,'II1','Lunes','10:00', 'calle de la politecnica s/n', 'Universidad de Villamayor', 1);
+
+insert into public."Asignaturas"
+values ('Fisica','ob',6, 60,'II1', 'Martes','10:00', 'calle de la politecnica s/n', 'Universidad de Villamayor', 1);
+
+insert into public."Asignaturas"
+values ('Fundamentos de programacion','ob',6, 60,'II1', 'Miercoles','10:00', 'calle de la politecnica s/n', 'Universidad de Villamayor', 1);
+
+insert into public."Asignaturas"
+values ('Fundamentos de computadores','ob',6, 60,'II1', 'Jueves','10:00', 'calle de la politecnica s/n', 'Universidad de Villamayor', 1);
