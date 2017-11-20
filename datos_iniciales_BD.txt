@@ -1,3 +1,6 @@
+He añadido una nueva columna a la tabla Aula, llamada nombre:
+Alter table public."Aula" add column nombre text not null;
+
 Universidad:
 INSERT INTO public."Universidad"
 Values ('Universidad de Villamayor', 'calle de la universidad s/n',987654321, 'uvm@uvm.es',null,'uvm.es');
