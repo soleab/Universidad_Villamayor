@@ -1,3 +1,4 @@
+
 # Universidad_Villamayor
 
 /*	PROYECTO ING SOF AVZ	*/
@@ -10,6 +11,7 @@ SPRINT 1:	-ACABADO-
 	# Creación de un superusuario que pueda acceder a toda la BD (Responsable Soledad Alvargonzález)
 	# Implementacion de la funcion que se encarga de enviar mails a los alumnos (Responsable Mohssin Nagib Najim)
 	# Implementacion incial de las clases principales (constructores) (Responsable Mohssin Nagib Najim)
+	# Creacion de las interfaces para los diferentes usuarios una vez inicien sesión en el sistema (Responsable David Ricote)
 	
 
 
