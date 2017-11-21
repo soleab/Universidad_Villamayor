@@ -1,4 +1,3 @@
-
 /*	PROYECTO ING SOF AVZ	*/
 
 SPRINT 1:	-ACABADO- 
@@ -17,5 +16,10 @@ SPRINT 1:	-ACABADO-
 
 SPRINT 2:	-SIN COMENZAR- 
 
-	# ... 
-	#
+	# Conexión Java & Postgresql  (Responsable Rubén García) 
+	# Conexión Python, Microservicios y Flask (Responsable Soledad Alvargonzález) 
+	# Iniciar BBDD con relación asignaturas - créditos. Ver si recibo esta cobrado o no (Responsable Rubén García) 
+	# Mandar email a los 15 o 30 dias si no se ha pagado (Responsable Mohssin Nagib Najim) 
+	# Generar recibos (Responsable Javier Adame)
+	# Generar nomina de profesor dependiendo de su categoria y horas de docencia e investigacion (Responsable Pablo Calvo)
+	# Añadir una instancia de la BBDD e iniciar pruebas (Responsable Paula Dominguez)
