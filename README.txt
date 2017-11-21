@@ -1,13 +1,21 @@
 
 /*	PROYECTO ING SOF AVZ	*/
 
-SPRINT 1:	-ACABADO-
-	# Planteamiento e implementaci髇 de caso de herencia Persona, Profesor, Alumno (Responsable Rub閚 Garc韆)
-	# Implementaci髇 de la primera versi髇 de la BD (Visi髇 inicial general de atributos y entidades)  (Responsable Rub閚 Garc韆)
-	# ...
+SPRINT 1:	-ACABADO- 
 
+	# Planteamiento e implementaci贸n de caso de herencia Persona, Profesor, Alumno (Responsable Rub茅n Garc铆a) 
+	# Implementaci贸n de la primera versi贸n de la BD (Visi贸n inicial general de atributos y entidades) (Responsable Rub茅n Garc铆a) 
+	# Planteamiento e implementaci贸n de la BD inicial de la universidad (Responsable Soledad Alvargonz谩lez) 
+	# Creaci贸n de la BD inicial en un SGBD (Responsable Soledad Alvargonz谩lez) 
+	# Creaci贸n de un superusuario que pueda acceder a toda la BD (Responsable Soledad Alvargonz谩lez) 
+	# Implementacion de la funcion que se encarga de enviar mails a los alumnos (Responsable Mohssin Nagib Najim) 
+	# Implementacion incial de las clases principales (constructores) (Responsable Mohssin Nagib Najim) 
+	# Creacion de las interfaces para los diferentes usuarios una vez inicien sesi贸n en el sistema (Responsable David Ricote) 
+	# Creaci贸n de API swagger para departamentos, profesores y alumnos. (Responsable Pablo Calvo)
+	# Creado la interfaz de inicio, visualizaci贸n de grados y asignaturas, inicio de sesi贸n, login y alta de usuarios. (Responsable Paula Dominguez)
+	# Interfaz de la matricula (Responsable Javier Adame)
 
+SPRINT 2:	-SIN COMENZAR- 
 
-SPRINT 2:	-SIN COMENZAR-
-	# ...
-	# 
+	# ... 
+	#
