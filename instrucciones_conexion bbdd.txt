@@ -1,0 +1,2 @@
+Hacer llamada a connectDriver pasándole el nombre que le hayáis puesto a la bbdd con el superusuario y su contraseña
+y luego para ejecutar la consulta ejecutar los métodos Statement y Execute 
