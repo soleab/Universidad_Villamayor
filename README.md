@@ -18,6 +18,7 @@ SPRINT 2:	-SIN COMENZAR-
 
 	# Conexión Java & Postgresql  (Responsable Rubén García) 
 	# Conexión Python, Microservicios y Flask (Responsable Soledad Alvargonzález) 
+	# Ayudar con python & flask (Responsable Rubén García) 
 	# Iniciar BBDD con relación asignaturas - créditos. Ver si recibo esta cobrado o no (Responsable Rubén García) 
 	# Mandar email a los 15 o 30 dias si no se ha pagado (Responsable Mohssin Nagib Najim) 
 	# Generar recibos (Responsable Javier Adame)
