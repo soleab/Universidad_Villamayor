@@ -14,12 +14,13 @@ SPRINT 1:	-ACABADO-
 	# Creado la interfaz de inicio, visualización de grados y asignaturas, inicio de sesión, login y alta de usuarios. (Responsable Paula Dominguez)
 	# Interfaz de la matricula (Responsable Javier Adame)
 
-SPRINT 2:	-SIN COMENZAR- 
+SPRINT 2:	-ACABADO- 
 
 	# Conexión Java & Postgresql  (Responsable Rubén García) 
 	# Conexión Python, Microservicios y Flask (Responsable Soledad Alvargonzález) 
-	# Ayudar con python & flask (Responsable Rubén García) 
-	# Iniciar BBDD con relación asignaturas - créditos. Ver si recibo esta cobrado o no (Responsable Rubén García) 
+	# Modificación de la API REST (Responsable Soledad Alvargonzález) 
+	# Iniciación conexión BBDD con navegador, y presentacion contenidos php (Responsable Rubén García) 
+	# Iniciar BBDD con relación asignaturas - créditos. Ver si recibo esta cobrado o no (Responsable Paula Dominguez) 
 	# Mandar email a los 15 o 30 dias si no se ha pagado (Responsable Mohssin Nagib Najim) 
 	# Generar recibos (Responsable Javier Adame)
 	# Generar nomina de profesor dependiendo de su categoria y horas de docencia e investigacion (Responsable Pablo Calvo)
