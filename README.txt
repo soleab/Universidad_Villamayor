@@ -25,3 +25,7 @@ SPRINT 2:	-ACABADO-
 	# Generar recibos (Responsable Javier Adame)
 	# Generar nomina de profesor dependiendo de su categoria y horas de docencia e investigacion (Responsable Pablo Calvo)
 	# Añadir una instancia de la BBDD e iniciar pruebas (Responsable Paula Dominguez)
+	# Creación de Asignaturas, Grados y Facultades (datos para pruebas) (David Ricote)
+	# Implementación de toda la interfaz gráfica (Administrador: gestión de asignaturas, grados, profesores, alumnos, periodo académico. Matriculación del alumno: escoger asignaturas de grado, seleccionar métodos de pago, resumen de matricula. Portal Alumno: mostrar información relativa al alumno, recibos de la ultima matrícula. Estudios: mostrar todos las asignaturas por cada grado) (Paula Dominguez)
+	# Creación de una nueva Base de datos apta para unir con la interfaz gráfica. (Paula Dominguez)
+	
