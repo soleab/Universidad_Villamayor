@@ -1,0 +1,681 @@
+---
+swagger: "2.0"
+info:
+  description: "Aplicación para gestionar los datos de la universidad."
+  version: "2.0.0"
+  title: "Universidad de Villamayor"
+  termsOfService: ""
+tags:
+- name: "Facultad"
+  description: "Información sobre los grados de una facultad"
+- name: "Grados"
+  description: "Información sobre los grados y las asignaturas"
+- name: "Alumnos"
+  description: "Gestión de cuenta para los alumnos"
+- name: "Profesores"
+  description: "Gestión de los alumnos y grupos asignados"
+schemes:
+- "https"
+paths:
+  /Facultad:
+    get:
+      tags:
+      - "Facultad"
+      summary: "Consultar los grados que hay en una facultad"
+      description: ""
+      operationId: "get_grados_facultad"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "facultad"
+        in: "query"
+        description: "Informa de los grados de una facultad"
+        required: true
+        type: "string"
+        items:
+          type: "array"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+        408:
+          description: "Request Timeout"
+      x-swagger-router-controller: "swagger_server.controllers.facultad_controller"
+  /Grados:
+    get:
+      tags:
+      - "Grados"
+      summary: "Consultar grados"
+      description: ""
+      operationId: "get_grados"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+        408:
+          description: "Request Timeout"
+      x-swagger-router-controller: "swagger_server.controllers.grados_controller"
+    post:
+      tags:
+      - "Grados"
+      summary: "Añadir un grado"
+      description: "Solo puede hacerlo el administrador de usuarios."
+      operationId: "crear_grado"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "facultad"
+        description: "Crear Grado"
+        required: true
+        schema:
+          $ref: "#/definitions/Grado"
+      responses:
+        default:
+          description: "successful operation"
+      x-swagger-router-controller: "swagger_server.controllers.grados_controller"
+  /Grados/Asignaturas:
+    get:
+      tags:
+      - "Grados"
+      summary: "Consultar asignaturas por grado"
+      description: ""
+      operationId: "get_asignaturas"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "grado"
+        in: "query"
+        description: "Informa de las asignaturas de un grado"
+        required: true
+        type: "string"
+        items:
+          type: "string"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+        408:
+          description: "Request Timeout"
+      x-swagger-router-controller: "swagger_server.controllers.grados_controller"
+    post:
+      tags:
+      - "Grados"
+      summary: "Añadir una asignatura a un grado"
+      description: "Solo puede hacerlo el administrador de usuarios."
+      operationId: "crear_asignatura"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "grado"
+        description: "Crear Asignatura"
+        required: true
+        schema:
+          $ref: "#/definitions/Asignatura"
+      responses:
+        default:
+          description: "successful operation"
+      x-swagger-router-controller: "swagger_server.controllers.grados_controller"
+  /Alumnos:
+    get:
+      tags:
+      - "Alumnos"
+      summary: "Consultar los datos de un alumno"
+      operationId: "get_datos"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "dni"
+        in: "query"
+        description: "Da informacion acerca de un alumno"
+        required: true
+        type: "string"
+        items:
+          type: "array"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid Order"
+      x-swagger-router-controller: "swagger_server.controllers.alumnos_controller"
+    post:
+      tags:
+      - "Alumnos"
+      summary: "crear un nuevo alumno"
+      operationId: "crear_alumno"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "alumno"
+        description: "Crear Alumno"
+        required: false
+        schema:
+          $ref: "#/definitions/Alumno"
+      responses:
+        200:
+          description: "successful operation"
+        405:
+          description: "Validation exception"
+      x-swagger-router-controller: "swagger_server.controllers.alumnos_controller"
+    put:
+      tags:
+      - "Alumnos"
+      summary: "Modificar alumno"
+      operationId: "modificar_alumno"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "dni"
+        description: "dni del alumno que se quiere modificar"
+        required: true
+        schema:
+          $ref: "#/definitions/Alumno"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "DNI inválido"
+        404:
+          description: "Alumno not encontrado"
+        405:
+          description: "Validation exception"
+      x-swagger-router-controller: "swagger_server.controllers.alumnos_controller"
+  /Alumnos/Matricula:
+    get:
+      tags:
+      - "Alumnos"
+      summary: "Consultar matricula"
+      operationId: "get_matricula"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "dni"
+        in: "query"
+        description: "Muestra la información de la matrícula de un alumno"
+        required: true
+        type: "string"
+        items:
+          type: "array"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid Order"
+      x-swagger-router-controller: "swagger_server.controllers.alumnos_controller"
+    post:
+      tags:
+      - "Alumnos"
+      summary: "Matricularse"
+      operationId: "matriculacion"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "matricula"
+        description: "Crear Matricula"
+        required: false
+        schema:
+          $ref: "#/definitions/Matricula"
+      responses:
+        200:
+          description: "successful operation"
+        405:
+          description: "Validation exception"
+      x-swagger-router-controller: "swagger_server.controllers.alumnos_controller"
+  /Alumnos/Pagos:
+    post:
+      tags:
+      - "Alumnos"
+      summary: "Reserva de plaza o pago de matrícula"
+      operationId: "pago"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "usuario"
+        description: "pagar la reserva o la matrícula"
+        required: false
+        schema:
+          $ref: "#/definitions/Pago"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Order not found"
+      x-swagger-router-controller: "swagger_server.controllers.alumnos_controller"
+  /Profesores:
+    get:
+      tags:
+      - "Profesores"
+      summary: "Obtener la información referente a un profesor"
+      operationId: "info_profesor"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "dni"
+        in: "query"
+        description: "información del profesor solicitado por dni"
+        required: true
+        type: "string"
+        items:
+          type: "array"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid Order"
+      x-swagger-router-controller: "swagger_server.controllers.profesores_controller"
+    post:
+      tags:
+      - "Profesores"
+      summary: "Añadir un nuevo profesor"
+      operationId: "crear_profesor"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "profesor"
+        description: "Crear profesor"
+        required: false
+        schema:
+          $ref: "#/definitions/Profesor"
+      responses:
+        default:
+          description: "successful operation"
+      x-swagger-router-controller: "swagger_server.controllers.profesores_controller"
+  /Profesores/Grupos/Alumnos/Notas:
+    post:
+      tags:
+      - "Profesores"
+      summary: "Añadir nota de un alumno"
+      operationId: "añadir_nota"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "dni"
+        description: "Crear Alumno"
+        required: true
+        schema:
+          $ref: "#/definitions/MatriculaAsignaturas"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "string"
+          headers:
+            X-Rate-Limit:
+              type: "integer"
+              format: "int32"
+              description: "calls per hour allowed by the user"
+            X-Expires-After:
+              type: "string"
+              format: "date-time"
+              description: "date in UTC when token expires"
+        400:
+          description: "Invalid username/password supplied"
+      x-swagger-router-controller: "swagger_server.controllers.profesores_controller"
+  /user:
+    post:
+      tags:
+      - "user"
+      summary: "Crear un usuario"
+      description: "Solo puede hacerlo el administrador de usuarios."
+      operationId: "crear_usuario"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Crear usuario"
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        default:
+          description: "successful operation"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /user/logout:
+    get:
+      tags:
+      - "user"
+      summary: "Cerrar sesión"
+      description: ""
+      operationId: "logout_user"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        default:
+          description: "successful operation"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+  /user/{username}:
+    get:
+      tags:
+      - "user"
+      summary: "Obtiene un usuario por su nombre de usuario"
+      description: ""
+      operationId: "get_user_by_name"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "username"
+        in: "path"
+        description: "Nombre de usuario que se desea buscar "
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/User"
+        400:
+          description: "Invalid username supplied"
+        404:
+          description: "User not found"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+    put:
+      tags:
+      - "user"
+      summary: "Actualizar un usuario"
+      description: "Solamente puede hacerlo el usuario loggeado."
+      operationId: "update_user"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "username"
+        in: "path"
+        description: "Nombre del usuario que quiere modificarse"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "Usuario a modificar"
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        400:
+          description: "Invalid user supplied"
+        404:
+          description: "User not found"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+    delete:
+      tags:
+      - "user"
+      summary: "Eliminar usuario"
+      description: "Solo pude hacerlo el administrador de usuarios."
+      operationId: "delete_user"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "username"
+        in: "path"
+        description: "Nombre de usuario que quiere ser borrado"
+        required: true
+        type: "string"
+      responses:
+        400:
+          description: "Invalid username supplied"
+        404:
+          description: "User not found"
+      x-swagger-router-controller: "swagger_server.controllers.user_controller"
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  Order:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      quantity:
+        type: "integer"
+        format: "int32"
+      shipDate:
+        type: "string"
+        format: "date-time"
+      status:
+        type: "string"
+        description: "Order Status"
+        enum:
+        - "placed"
+        - "approved"
+        - "delivered"
+      complete:
+        type: "boolean"
+        default: false
+    xml:
+      name: "Order"
+  Category:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+    xml:
+      name: "Category"
+  Grado:
+    type: "object"
+    properties:
+      gradoId:
+        type: "integer"
+        format: "int64"
+        description: "Código del grado que se quiere añadir."
+      NombreGrado:
+        type: "string"
+      CreditosGrado:
+        type: "integer"
+        format: "int64"
+      CreditosOptativos:
+        type: "integer"
+        format: "int64"
+      CreditosTransversales:
+        type: "integer"
+        format: "int64"
+      facultadId:
+        type: "integer"
+        format: "int64"
+        description: "Código de la facultad a la que se quiere añadir el grado."
+  Asignatura:
+    type: "object"
+    properties:
+      AsignaturaID:
+        type: "integer"
+        format: "int64"
+      Nombre:
+        type: "string"
+      Creditos:
+        type: "integer"
+        format: "int64"
+      Tipo:
+        type: "string"
+        description: "Obligatoria, optativa o transversal"
+      Curso:
+        type: "integer"
+        format: "int64"
+      Semestre:
+        type: "integer"
+        format: "int64"
+      Grado:
+        type: "integer"
+        format: "int64"
+        description: "Código del grado al que se le quiere añadir la asignatura"
+  Alumno:
+    type: "object"
+    properties:
+      NombreCompleto:
+        type: "string"
+      DNI:
+        type: "string"
+      FechaNacimiento:
+        type: "string"
+      Grado:
+        type: "integer"
+        format: "int64"
+        description: "Código del grado que está cursando"
+      Usuario:
+        type: "string"
+        description: "username del loggin"
+      Contraseña:
+        type: "string"
+        description: "contraseña del loggin"
+      email:
+        type: "string"
+        description: "email del alumno"
+  Matricula:
+    type: "object"
+    properties:
+      asignaturas:
+        type: "string"
+        description: "asignaturas en las que se va a matricular"
+  MatriculaAsignaturas:
+    type: "object"
+    properties:
+      asignatura:
+        type: "string"
+        description: "asignatura que se va a puntuar"
+      nota:
+        type: "string"
+        description: "nota escrita"
+      notanumerica:
+        type: "number"
+  Pago:
+    type: "object"
+    properties:
+      identificador:
+        type: "integer"
+        format: "int64"
+        description: "identificador del pago"
+      plazo:
+        type: "integer"
+        format: "int64"
+        description: "plazo de pago (uno, dos o tres)"
+      importe:
+        type: "number"
+        description: "cantidad a pagar en ese plazo"
+      pagado:
+        type: "boolean"
+        description: "indica si se ha pagado"
+      fechaOrden:
+        type: "string"
+      fechaVencimiento:
+        type: "string"
+        description: "último día para pagar la matrícula, generado automáticamente"
+      idMatricula:
+        type: "integer"
+        format: "int64"
+        description: "identificador de la matrícula a la que va asociada el pago"
+  Profesor:
+    type: "object"
+    properties:
+      NombreApellidos:
+        type: "string"
+      DNI:
+        type: "string"
+        description: "dni del profesor"
+      FechaNacimiento:
+        type: "string"
+      Investigacion:
+        type: "integer"
+        format: "int64"
+        description: "horas dedicadas a la investigación"
+      Docencia:
+        type: "integer"
+        format: "int64"
+        description: "horas dedicadas a la docencia"
+      Categoria:
+        type: "string"
+      Departamento:
+        type: "integer"
+        format: "int64"
+        description: "código del departamento al que pertenece"
+      Usuario:
+        type: "string"
+        description: "username del loggin"
+      Contraseña:
+        type: "string"
+        description: "contraseña del loggin"
+      email:
+        type: "string"
+        description: "email del profesor"
+  User:
+    type: "object"
+    properties:
+      username:
+        type: "string"
+      email:
+        type: "string"
+      password:
+        type: "string"
+      dni:
+        type: "string"
+        description: "dni del alumno al que corresponde el usuario"
+    xml:
+      name: "User"
+  Tag:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+    xml:
+      name: "Tag"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
