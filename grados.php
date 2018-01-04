@@ -21,48 +21,48 @@ $results = $statement->fetchAll();
 <body>
  
  
-<div class="row column text-center">
+<div class="banner">
 <h2>Universidad VillaMayor</h2>
-<hr>
 </div>
+<h3> Lista de Grados:</h3>
 <div class="contenido">
 
-<blockquote>
-  <h3>Lista de Grados:</h3>
-</blockquote>
-
-<table width="100%">
-  <thead>
-    <tr class="borde" style="border:1px;">
-      <th><u>Nombre de la Carrera</u></th>
-      <th><u>Identificador</u></th>
-      <th><u>Creditos Grado</u></th>
-      <th><u>Creditos Optativos</u></th>
-      <th><u>Creditos Transversales</u></th>
-      <th><u>Identificador Escuela</u></th>
-    </tr>
-  </thead>
-  <tbody>
-  <?php
+  <table class="GeneratedTable" width="100%">
+    <thead>
+      <tr class="borde" style="border:1px;">
+        <th>Nombre de la Carrera</th>
+        <th>Identificador</th>
+        <th>Creditos Grado</th>
+        <th>Creditos Optativos</th>
+        <th>Creditos Transversales</th>
+        <th>Identificador Escuela</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
   	foreach($results as $rs)
 	{
   ?>
-    <tr>
-      <td><?php echo $rs['NombreGrado'] ?></td>
-      <td><?php echo $rs['GradoID'] ?></td>
-      <td><?php echo $rs['CreditosGrado'] ?></td>
-      <td><?php echo $rs['CreditosOptativos'] ?></td>
-      <td><?php echo $rs['CreditosTransversales'] ?></td>
-      <td><?php echo $rs['id'] ?></td> 
-    </tr>
-    
-    <?php
+      <tr>
+        <td><?php echo $rs['NombreGrado'] ?></td>
+        <td><?php echo $rs['GradoID'] ?></td>
+        <td><?php echo $rs['CreditosGrado'] ?></td>
+        <td><?php echo $rs['CreditosOptativos'] ?></td>
+        <td><?php echo $rs['CreditosTransversales'] ?></td>
+        <td><?php echo $rs['id'] ?></td>
+      </tr>
+      <?php
       }
       ?>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 </div>
-
+<p>&nbsp;</p>
+<div id="cred" >
+  2018 © Universidad de VillaMayor
+  - Todos los derechos reservados
+  <p> Contacto: infoedu@uvm.es</p>
+</div>
 
 
 </body>
