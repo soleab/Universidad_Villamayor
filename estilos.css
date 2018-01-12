@@ -1,0 +1,110 @@
+body {
+	
+	background-color:#F7FFBF;
+} 
+
+table.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #ffcc00;
+}
+
+h2 {
+	color: #F1B300;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	background-color: #F9D992;
+	padding: 15;
+	border-radius: 2px;
+	border-width: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	top: 0px;
+	position: relative;
+	text-shadow: 2px 2px #E48600;
+}
+.no-js body .contenido {
+	margin: 20px;
+}
+h3 {
+	color: #FF9E00;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+	margin-left: 20px;
+}
+body .contenido table {
+	padding: 3px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	text-align: justify;
+	border-bottom-width: 1px;
+}
+
+.contenido {
+	border-width: 5px;
+	margin: 10px;
+	padding-top: 0px;
+	padding-right: 55px;
+	padding-left: 55px;
+	padding-bottom: 55px;
+	}
+body .contenido table {
+	margin: 10px;
+}
+.borde {
+	border: 1px;
+}
+
+
+tr:hover {
+	background-color: #F5FF56;
+	cursor: pointer;
+}
+td {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+#cred {
+	bottom: 0px;
+	position: static;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: center;
+	background-color: #F1FF68;
+	border-width: 1px;
+	border-top-color: #FFB20C;
+	padding: 10px;
+	border-top-style: solid;
+	margin: 0px;
+	max-width: 100%;
+}
+.listado {
+	height: 300px;
+	margin: 100 px;
+	padding-top: 15px;
+	padding-right: px;
+	padding-left: px;
+	padding-bottom: 15px;
+	background-color: #f7ffbf;
+}
+ul li a {
+	text-decoration: none;
+}
