@@ -32,4 +32,6 @@ SPRINT 3:	-FINAL-
 	# Modificación de estructura web, añadida hoja de estilos css.  (Responsable Rubén García) 
 	# Investigación llamadas a la API por medio de php. Decodificación de json desde la llamada en php.  (Responsable Rubén García) 
 	# Creación índice web y correspondientes enlaces. Incluye logo transparente. (Responsable Rubén García) 
+	# Creación API para profesores (Responsable Soledad Alvargonzález)
+	# Creación API alumnos y matriculación (Responsable Soledad Alvargonzález)
 
