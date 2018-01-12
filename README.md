@@ -25,3 +25,11 @@ SPRINT 2:	-ACABADO-
 	# Generar recibos (Responsable Javier Adame)
 	# Generar nomina de profesor dependiendo de su categoria y horas de docencia e investigacion (Responsable Pablo Calvo)
 	# Añadir una instancia de la BBDD e iniciar pruebas (Responsable Paula Dominguez)
+	
+	
+SPRINT 3:	-FINAL- 
+
+	# Modificación de estructura web, añadida hoja de estilos css.  (Responsable Rubén García) 
+	# Investigación llamadas a la API por medio de php. Decodificación de json desde la llamada en php.  (Responsable Rubén García) 
+	# Creación índice web y correspondientes enlaces. Incluye logo transparente. (Responsable Rubén García) 
+
