@@ -36,4 +36,6 @@ SPRINT 3:	-FINAL-
 	#Creación de datos para poblar la base de datos de asignaturas y grados (Responsable Paula Dominguez Garcia) 
 	# Creación de JSON desde swagger para la gestion de reservas de las aulas. Añadida la opcion de reserva para alumnos. (Responsable David Ricote Escobar) 
 	# Creacion de los datos de las reservas de las aulas (Responsable David Ricote Escobar) 
+	#Creación API para profesores (Responsable Soledad Alvargonzález)
+	#Creación API alumnos y matriculación (Responsable Soledad Alvargonzález)
        
