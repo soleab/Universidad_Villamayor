@@ -1,0 +1,390 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Aplicación para gestionar los datos de las reservas de las aulas de la universidad.",
+    "version": "2.0.0",
+    "title": "Universidad de Villamayor. Gestión de reservas",
+    "termsOfService": ""
+  },
+  "tags": [
+    {
+      "name": "Reservas",
+      "description": "Gestión de las reservas"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/Reservas": {
+      "get": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Obtener la información referente a una reserva",
+        "operationId": "infoReserva",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idReserva",
+            "in": "query",
+            "description": "información de la reserva de un aula ya realizada",
+            "type": "string",
+            "required": true,
+            "items": {
+              "type": "array"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid Order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Modificar datos de la reserva",
+        "operationId": "modificarReserva",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "ModificarDatos",
+            "in": "body",
+            "description": "datos a modificar",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Reserva"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Reserva not valida"
+          },
+          "404": {
+            "description": "Aula not encontrada"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Reservas/Aulas": {
+      "get": {
+        "tags": [
+          "Aulas disponibles"
+        ],
+        "summary": "Obtener información relacionada con las aulas de la universidad disponibles para reserva.",
+        "operationId": "datosReserva",
+        "produces": [
+          "appplication/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idAula",
+            "in": "query",
+            "description": "identificacion del aula para conocer sus datos",
+            "type": "string",
+            "required": true,
+            "items": {
+              "type": "array"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Usuarios/": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Obtener información de los usuarios que han entrado al sistema de reservas.",
+        "operationId": "infoUsuario",
+        "produces": [
+          "appplication/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idUsuario",
+            "in": "query",
+            "description": "identificador del usuario para obtener su informacion.",
+            "type": "string",
+            "required": true,
+            "items": {
+              "type": "array"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Usuarios/Profesor": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "obtener la informacion del profesor que ha iniciado el proceso de reserva",
+        "operationId": "infoProfesor",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idProfesor",
+            "in": "query",
+            "description": "identificador del profesor",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Usuarios/Alumno": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Obtener los datos del alumno que realice la reserva",
+        "operationId": "datosAlumno",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idAlumno",
+            "in": "query",
+            "description": "identificador del alumno",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Usuarios/Profesor/Reserva": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Crear reserva por parte de un profesor",
+        "operationId": "reservarProfesor",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idAula",
+            "in": "body",
+            "description": "Reservar un aula",
+            "schema": {
+              "$ref": "#/definitions/Usuarios"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string"
+            },
+            "headers": {
+              "X-Rate-Limit": {
+                "type": "integer",
+                "format": "int32",
+                "description": "calls per hour allowed by the user"
+              },
+              "X-Expires-After": {
+                "type": "string",
+                "format": "date-time",
+                "description": "date in UTC when token expires"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid username/password supplied"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Usuarios/Alumno/Reserva": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Crear reserva por parte de un alumno",
+        "operationId": "reservarAlumno",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idAula",
+            "in": "body",
+            "description": "Reservar un aula",
+            "schema": {
+              "$ref": "#/definitions/Usuarios"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string"
+            },
+            "headers": {
+              "X-Rate-Limit": {
+                "type": "integer",
+                "format": "int32",
+                "description": "calls per hour allowed by the user"
+              },
+              "X-Expires-After": {
+                "type": "string",
+                "format": "date-time",
+                "description": "date in UTC when token expires"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid username/password supplied"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Reserva": {
+      "type": "object",
+      "properties": {
+        "Fecha": {
+          "type": "string",
+          "description": "fecha de creacion de la reserva"
+        },
+        "Precio": {
+          "type": "integer",
+          "format": "int64",
+          "description": "precio de la reserva realizada"
+        },
+        "Usuario": {
+          "type": "string",
+          "description": "identificador del usuario que realiza la reserva"
+        },
+        "Aula": {
+          "type": "string",
+          "description": "datos del aula reservada"
+        }
+      }
+    },
+    "Usuarios": {
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string",
+          "description": "nombre del usuario"
+        },
+        "apellidos": {
+          "type": "number",
+          "description": "apellidos del usuario"
+        },
+        "pagado": {
+          "type": "boolean",
+          "description": "verdadero si ya se ha pagado la reserva"
+        },
+        "contacto": {
+          "type": "string",
+          "description": "datos de contacto del usuario para que devuelva las llaves"
+        }
+      },
+      "externalDocs": {
+        "description": "Más información acerca de la UVM.",
+        "url": "http://uvm.es"
+      }
+    }
+  }
+}
