@@ -1,0 +1,374 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Aplicación para gestionar los datos de los grados de la universidad.",
+    "version": "2.0.0",
+    "title": "Universidad de Villamayor. Gestión de grados",
+    "termsOfService": ""
+  },
+  "tags": [
+    {
+      "name": "Grados",
+      "description": "Gestión de Grados"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/Grados": {
+      "get": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "Obtener la información acerca de un grado",
+        "operationId": "infoGrado",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idGrado",
+            "in": "query",
+            "description": "información del grado a partir de su id",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid Order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "Modificar los datos correspondientes al grado",
+        "operationId": "updateGrado",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "UpdateGrado",
+            "in": "body",
+            "description": "Se modifica el grado",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Grado"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "ID grado inválido"
+          },
+          "404": {
+            "description": "Grado not encontrado"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Grados/Asignaturas": {
+      "get": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "Se obtienen las asignaturas que hay en un grado concreto.",
+        "operationId": "asignaturasGrado",
+        "produces": [
+          "appplication/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idGrado",
+            "in": "query",
+            "description": "es necesario el id del grado para obtener las asignaturas",
+            "type": "number",
+            "required": true,
+            "items": {
+              "type": "array"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "Modificar los datos correspondientes a las asignaturas",
+        "operationId": "updateAsignatura",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "UpdateAsignatura",
+            "in": "body",
+            "description": "Se modifica la asignatura",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Asignatura"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "ID grado inválido"
+          },
+          "404": {
+            "description": "Grado not encontrado"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Grados/Facultad": {
+      "get": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "Se obtiene la facultad a la que pertenece un grado.",
+        "operationId": "facultadGrado",
+        "produces": [
+          "appplication/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idGrado",
+            "in": "query",
+            "description": "a partir del id del grado podemos conocer a que facultad pertenece dicho grado.",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Grados/Creditos": {
+      "get": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "podemos obtener el total de creditos que tiene ese grado (indicados en el plan de estudio)",
+        "operationId": "creditosGrado",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idGrado",
+            "in": "query",
+            "description": "id del grado",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Grados/CreditosObligatorios": {
+      "get": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "podemos obtener el total de creditos obligatorios que tiene ese grado (indicados en el plan de estudio)",
+        "operationId": "creditosObligatoriosGrado",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idGrado",
+            "in": "query",
+            "description": "id del grado",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Grados/CreditosOptativos": {
+      "get": {
+        "tags": [
+          "Grados"
+        ],
+        "summary": "podemos obtener el total de creditos optativos que tiene ese grado (indicados en el plan de estudio)",
+        "operationId": "creditosOptativosGrado",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idGrado",
+            "in": "query",
+            "description": "id del grado",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Grado": {
+      "type": "object",
+      "properties": {
+        "Facultad": {
+          "type": "string",
+          "description": "facultad a la que pertenece el grado"
+        },
+        "Creditos": {
+          "type": "integer",
+          "format": "int64",
+          "description": "creditos totales que tiene el grado"
+        },
+        "CreditosObligatorios": {
+          "type": "integer",
+          "format": "int64",
+          "description": "creditos obligatorios que tiene el grado"
+        },
+        "CreditosOptativos": {
+          "type": "integer",
+          "format": "int64",
+          "description": "creditos optativos que tiene el grado"
+        },
+        "Id": {
+          "type": "integer",
+          "format": "int64",
+          "description": "id del grado"
+        }
+      }
+    },
+    "Asignatura": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": "id de la asignatura"
+        },
+        "nombre": {
+          "type": "string",
+          "description": "nombre de la asignatura"
+        },
+        "curso": {
+          "type": "integer",
+          "format": "int64",
+          "description": "curso al que pertenece la asignatura"
+        },
+        "semestre": {
+          "type": "integer",
+          "format": "int64",
+          "description": "semestre al que pertenece la asignatura"
+        },
+        "descipcion": {
+          "type": "string",
+          "description": "descripcion de la asignatura"
+        },
+        "tipo": {
+          "type": "string",
+          "description": "tipo de la asig. TR, OB, OP"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Más información acerca de la UVM.",
+    "url": "http://uvm.es"
+  }
+}
