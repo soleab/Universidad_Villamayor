@@ -57,7 +57,7 @@
           "Aulas"
         ],
         "summary": "Modificar aulas",
-        "operationId": "reservar",
+        "operationId": "modificar",
         "produces": [
           "application/xml",
           "application/json"
@@ -66,7 +66,7 @@
           {
             "name": "modificarAulas",
             "in": "body",
-            "description": "aula a reservar",
+            "description": "aula a modificar",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Aula"
