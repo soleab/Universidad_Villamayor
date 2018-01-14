@@ -1,12 +1,4 @@
-<pre><?php
-$Name = null;
-require_once('connection.php');
-$sql = 'SELECT * FROM gradoss';
-$statement = $pdo->prepare($sql);
-$statement->execute();
-$results = $statement->fetchAll();
-//var_dump($results);
-?>
+<pre>
 </pre>
 <!doctype html>
 <html class="no-js" lang="es">
