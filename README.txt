@@ -38,4 +38,5 @@ SPRINT 3:	-FINAL-
 	# Creacion de los datos de las reservas de las aulas (Responsable David Ricote Escobar) 
 	# Creación API para profesores (Responsable Soledad Alvargonzález)
 	# Creación API alumnos y matriculación (Responsable Soledad Alvargonzález)
+	# Creación API nominas de profesores (Responsable Javier Adame)
        
