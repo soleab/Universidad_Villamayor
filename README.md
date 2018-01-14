@@ -32,6 +32,9 @@ SPRINT 3:	-FINAL-
 	# Modificación de estructura web, añadida hoja de estilos css.  (Responsable Rubén García) 
 	# Investigación llamadas a la API por medio de php. Decodificación de json desde la llamada en php.  (Responsable Rubén García) 
 	# Creación índice web y correspondientes enlaces. Incluye logo transparente. (Responsable Rubén García) 
+	# Creación de JSON a partir de SWAGGER de la tabla de Grados. (Responsable Paula Dominguez Garcia)
+	# Creación de datos para poblar la base de datos de asignaturas y grados (Responsable Paula Dominguez Garcia) 
+	# Creación de JSON desde swagger para la gestion de reservas de las aulas. Añadida la opcion de reserva para alumnos. (Responsable David Ricote Escobar) 
+	# Creacion de los datos de las reservas de las aulas (Responsable David Ricote Escobar) 
 	# Creación API para profesores (Responsable Soledad Alvargonzález)
 	# Creación API alumnos y matriculación (Responsable Soledad Alvargonzález)
-
