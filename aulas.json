@@ -1,0 +1,168 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Aplicación para gestión de aulas y laboratorios de los distintos centros de la UV.",
+    "version": "2.0.0",
+    "title": "Universidad de Villamayor. Gestión de recursos.",
+    "termsOfService": ""
+  },
+  "tags": [
+    {
+      "name": "Aulas",
+      "description": "Gestión y de aulas"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/Aulas": {
+      "get": {
+        "tags": [
+          "Aulas"
+        ],
+        "summary": "Obtener la información de un aula",
+        "operationId": "infoAula",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "información del aula buscada por su nombre",
+            "type": "string",
+            "required": true,
+            "items": {
+              "type": "array"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid Order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Aulas"
+        ],
+        "summary": "Modificar aulas",
+        "operationId": "reservar",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "modificarAulas",
+            "in": "body",
+            "description": "aula a reservar",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Aula"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Aula invalida"
+          },
+          "404": {
+            "description": "Aula not encontrada"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Aulas/Centro": {
+      "get": {
+        "tags": [
+          "Aulas"
+        ],
+        "summary": "Obtener las aulas de un centro",
+        "operationId": "infoAulas",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Centro",
+            "in": "query",
+            "description": "nombre del centro",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid Order"
+          },
+          "404": {
+            "description": "Centro not found"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Aula": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "type": "string",
+          "description": "nombre del aula"
+        },
+        "Centro": {
+          "type": "string",
+          "description": "centro a la que pertenece el aula"
+        },
+        "Tipo": {
+          "type": "string",
+          "description": "Si se trata de aula grande o laboratorio"
+        },
+        "Precio": {
+          "type": "integer",
+          "format": "int64",
+          "description": "precio del aula por hora"
+        },
+        "Capacidad": {
+          "type": "integer",
+          "format": "int64",
+          "description": "si el aula esta libre"
+        }
+      }
+    }
+  }
+}
