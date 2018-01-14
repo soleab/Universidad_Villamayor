@@ -150,7 +150,7 @@
         },
         "Tipo": {
           "type": "string",
-          "description": "Si se trata de aula grande o laboratorio"
+          "description": "aula grande, laboratorio, sala de reunión"
         },
         "Precio": {
           "type": "integer",
@@ -160,7 +160,7 @@
         "Capacidad": {
           "type": "integer",
           "format": "int64",
-          "description": "si el aula esta libre"
+          "description": "capacidad del aula"
         }
       }
     }
