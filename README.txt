@@ -39,4 +39,5 @@ SPRINT 3:	-FINAL-
 	# Creación API para profesores (Responsable Soledad Alvargonzález)
 	# Creación API alumnos y matriculación (Responsable Soledad Alvargonzález)
 	# Creación API nominas de profesores (Responsable Javier Adame)
+	# Creación API para la gestion de correos. (Responsable Mohssin Nagib Najim)
        
