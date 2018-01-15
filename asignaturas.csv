@@ -1,0 +1,900 @@
+id asignatura;id grado;nombre;creditos;tipo;curso;semestre
+1;1;Fisica;6;OB;1;1
+2;1;Fundamentos de Criminologia;6;OB;1;1
+3;1;Matematicas;6;OB;1;1
+4;1;Quimica;6;OB;1;1
+5;1;Tecnicas de Comunicación;6;OB;1;1
+6;1;Biologia;6;OB;1;2
+7;1;Derechos Fundamentales;6;OB;1;2
+8;1;Estadistica;6;OB;1;2
+9;1;Programacion de Bases de Datos;6;OB;1;2
+10;1;Quimica Forense;6;OB;1;2
+11;1;Tipos de Delincuencia;6;OB;2;1
+12;1;Teorias Criminologicas;6;OB;2;1
+13;1;Modelos de Seguridad;6;OB;2;1
+14;1;Politica Criminal;6;OB;2;1
+15;1;Psicologia;6;OP;2;1
+16;1;Derecho de la Seguridad Publica;6;OB;2;2
+17;1;Sociologia de la Desviacion;6;OB;2;2
+18;1;Investigacion Cientifica en Criminologia;6;OB;2;2
+19;1;Victimologia;6;OB;2;2
+20;1;Criminalistica;6;OB;3;1
+21;1;Derecho Penal Especial;6;OB;3;1
+22;1;Medicina Legal y Forense;6;OB;3;1
+23;1;Derecho Procesal Penal;6;OB;3;1
+24;1;Politicas Publicas;6;OB;3;1
+25;1;Instrumentos Matematicos;6;OB;3;2
+26;1;Instituciones Publicas;6;OB;3;2
+27;1;Derecho Penitenciario;6;OB;3;2
+28;1;Estado del Bienestar e Inclusion Social;6;OP;3;2
+29;1;Resolucion de Conflictos;6;OP;3;2
+30;1;Violencia Domestica y de Genero;6;OP;4;1
+31;1;Prevencion de Riesgos Laborales;6;OP;4;1
+32;1;Terrorismo y Delincuencia Organizada;6;OP;4;1
+33;1;Agresividad Escolar;6;OP;4;1
+34;1;Salud y Desarrollo Urbano;6;OP;4;2
+35;1;Educacion para el Desarrollo;6;OP;4;2
+36;1;Bioetica;6;OP;4;2
+37;1;Trabajo de Fin de Grado;12;TFG;4;2
+38;2;Derecho Constitucional;6;OB;1;1
+39;2;Derecho Romano;6;OB;1;1
+40;2;Historia del Derecho Español;6;OB;1;1
+41;2;Introduccion al Derecho Social;6;OB;1;1
+42;2;Derecho Civil I;6;OB;1;2
+43;2;Derecho Eclesiastico;6;OB;1;2
+44;2;Economia Politica y Hacienda;6;OB;1;2
+45;2;Filosofia del Derecho;6;OB;1;2
+46;2;Derecho Civil II;6;OB;2;1
+47;2;Derecho Internacional Publico;6;OB;2;1
+48;2;Derecho Procesal I;6;OB;2;1
+49;2;Derechos Fundamentales;6;OB;2;1
+50;2;Derecho de la Union Europea;6;OB;2;2
+51;2;Derecho Mercantil I;6;OB;2;2
+52;2;Derecho Penal I;6;OB;2;2
+53;2;Introduccion al Derecho Administrativo;6;OB;2;2
+54;2;Derecho Administrativo;6;OB;3;1
+55;2;Derecho del Trabajo y la Seguridad Social;6;OB;3;1
+56;2;Derecho Financiero y Tributario I;6;OB;3;1
+57;2;Derecho Penal II;6;OB;3;1
+58;2;Derecho Financiero y Tributario II;6;OB;3;2
+59;2;Derecho Internacional Privado;6;OB;3;2
+60;2;Derecho Mercantil II;6;OB;3;2
+61;2;Derecho Procesal II;6;OB;3;2
+62;2;Derecho Civil III;6;OB;3;2
+63;2;Derecho del Medio Ambiente;6;OP;3;2
+64;2;Derecho de la Propiedad Industrial;6;OP;4;1
+65;2;Derecho Penitenciario;6;OP;4;1
+66;2;Proceso Civil en Roma;6;OP;4;1
+67;2;Medicina Legal ;6;OP;4;1
+68;2;Nacionalidad y Extranjeria;6;OP;4;1
+69;2;Libertad Religiosa en Europa;6;OP;4;2
+70;2;Contratacion en el Derecho del Consumo;6;OP;4;2
+71;2;Derecho Sindical;6;OP;4;2
+72;2;Procedimientos Tributarios;6;OP;4;2
+73;2;Trabajo de Fin de Grado;12;TFG;4;2
+74;3;Antropologia Cultural;6;OB;1;1
+75;3;Antropologia Social;6;OB;1;1
+76;3;Legislacion;6;OB;1;1
+77;3;Deontologia Profesional;6;OB;1;1
+78;3;Lengua de Signos Española I;6;OB;1;2
+79;3;Historia de la Discapacidad;6;OB;1;2
+80;3;Historia de la Lengua de Signos;6;OB;1;2
+81;3;Diversidad;6;OB;1;2
+82;3;Desarrollo Evolutivo;6;OB;2;1
+83;3;Tecnicas de Interpretacion;6;OB;2;1
+84;3;Lingüística Aplicada;6;OB;2;1
+85;3;Nuevas Tecnologias;6;OB;2;1
+86;3;Uso de las TIC;6;OB;2;2
+87;3;Idioma Moderno;6;OB;2;2
+88;3;Accesibilidad Universal;6;OB;2;2
+89;3;Diseño para Todas las Personas;6;OB;2;2
+90;3;Prevencion de Riesgos Laborales;6;OB;3;1
+91;3;Tecnicas de Interpretacion II;6;OB;3;1
+92;3;Gramatica Española;6;OB;3;1
+93;3;Lengua Española Aplicada a la Comunicación;6;OB;3;1
+94;3;Lengua de Signos Española II;6;OB;3;2
+95;3;Servicios Sociales;6;OB;3;2
+96;3;Fundamentos Sociocomunitarios;6;OB;3;2
+97;3;Tercer Sector;6;OB;3;2
+98;3;Lengua de Signos Española III;10;OP;4;1
+99;3;Lingüística Aplicada II;10;OP;4;1
+100;3;Lingüística Aplicada III;10;OP;4;1
+101;3;Metodologia de Investigacion Aplicada;10;OP;4;1
+102;3;Introduccion a Lengua de Signos Inglesa ;10;OP;4;2
+103;3;Lengua de Signos Inglesa;10;OP;4;2
+104;3;Trabajo de Fin de Grado;12;TFG;4;2
+105;4;Anatomia Humana;6;OB;1;1
+106;4;Fundamentos de Baloncesto y Balonmano;6;OB;1;1
+107;4;Fundamentos del Atletismo;6;OB;1;1
+108;4;Intervencion Docente en la Actividad Fisica;6;OB;1;1
+109;4;Teoria e Historia del Deporte;6;OB;1;1
+110;4;Fisiologia Humana;6;OB;1;2
+111;4;Fundamentos de las Actividades Gimnasticas;6;OB;1;2
+112;4;Fundamentos de los Deportes de Lucha;6;OB;1;2
+113;4;Psicologia de la Actividad Fisica y el Deporte;6;OB;1;2
+114;4;Biomecanica Humana;6;OB;2;1
+115;4;Desarrollo, Control y Aprendizaje Motor;6;OB;2;1
+116;4;Fisiologia del Ejercicio;6;OB;2;1
+117;4;Bases del Entrenamiento;6;OB;2;1
+118;4;Fundamentos de las Actividades Acuaticas;6;OB;2;1
+119;4;Sociologia de la Actividad Fisica y el Deporte;6;OB;2;2
+120;4;Actividades Fisicas en el Medio Natural;6;OB;2;2
+121;4;Estructura y Organización de las Instituciones;6;OB;2;2
+122;4;Expresion Corporal y Danza;6;OB;2;2
+123;4;Fundamentos de los Deportes de Raqueta;6;OB;2;2
+124;4;Fundamentos de los Deportes: Futbol y Voleibol;6;OB;2;2
+125;4;Actividad Fisica y Salud;6;OB;3;1
+126;4;Deporte y Recreacion;6;OB;3;1
+127;4;Educacion Fisica de Base y Juego Motor;6;OB;3;1
+128;4;Enseñanza de la Actividad Fisica y el Deporte I;6;OB;3;1
+129;4;Sistemas de Entrenamiento Deportivo ;6;OB;3;1
+130;4;Actividad Fisica Para Poblaciones Especiales;6;OB;3;2
+131;4;Enseñanza de la Actividad Fisica y el Deporte II;6;OB;3;2
+132;4;Iniciacion a la Investigacion;6;OB;3;2
+133;4;Nutricion en el Deporte;6;OB;3;2
+134;4;Marco Legal del Profesional de la Actividad Fisica y el Deporte;6;OB;3;2
+135;4;Planificacion y Control del Entrenamiento Deportivo;6;OB;4;1
+136;4;Actividad Fisica y Tercera Edad;6;OP;4;1
+137;4;Deporte Escolar;6;OP;4;1
+138;4;Actividades Fisicas Para Personas Con Discapacidad;6;OP;4;1
+139;4;Direccion de Organizaciones Deportivas Privadas;6;OP;4;1
+140;4;Especializacion Deportiva en Atletismo;6;OP;4;2
+141;4;Especializacion Deportiva en Baloncesto;6;OP;4;2
+142;4;Especializacion Deportiva en Futbol;6;OP;4;2
+143;4;Especializacion Deportiva en Voleibol;6;OP;4;2
+144;4;Trabajo de Fin de Grado;12;TFG;4;2
+145;5;Antropologia Cultural y Simbolica;6;OB;1;1
+146;5;Elementos de Derecho Privado;6;OB;1;1
+147;5;Sociologia de las Relaciones Laborales;6;OB;1;1
+148;5;Introduccion a la Empresa;6;OB;1;1
+149;5;Historia de las Relaciones Laborales;6;OB;1;2
+150;5;Organización y Metodos del Trabajo;6;OB;1;2
+151;5;Psicologia Aplicada al Trabajo ;6;OB;1;2
+152;5;Elementos de Derecho Publico;6;OB;1;2
+153;5;Introduccion al Derecho del Trabajo;6;OB;2;1
+154;5;Estadistica Aplicada;6;OB;2;1
+155;5;Idioma Moderno;6;OB;2;1
+156;5;Tecnicas de Investigacion Social;6;OB;2;1
+157;5;La Empresa Social;6;OB;2;2
+158;5;Derecho de las Administraciones Publicas;6;OB;2;2
+159;5;Derecho de la Contratacion Civil;6;OB;2;2
+160;5;Metodos de Gestion de la Informacion;6;OB;2;2
+161;5;Deontologia Profesional;6;OB;3;1
+162;5;Introduccion a la Contabilidad;6;OB;3;1
+163;5;Derecho del Trabajo I;6;OB;3;1
+164;5;Economia Aplicada;6;OB;3;1
+165;5;Derecho Financiero;6;OB;3;1
+166;5;Derecho de la Seguridad Social I;6;OB;3;2
+167;5;Derecho Sindical I;6;OB;3;2
+168;5;Seguridad en el Trabajo I;6;OB;3;2
+169;5;Direccion de Personal;6;OB;3;2
+170;5;Derecho de la Seguridad Social II;6;OP;3;2
+171;5;Derecho Sindical II;6;OP;4;1
+172;5;Seguridad en el Trabajo II;6;OP;4;1
+173;5;Gestion de Personas en las Organizaciones;6;OP;4;1
+174;5;Derecho del Empleo;6;OP;4;1
+175;5;Derecho Social Comunitario;6;OP;4;1
+176;5;Practicas Integradas;6;OP;4;2
+177;5;Derecho del Trabajo II;6;OP;4;2
+178;5;Iniciativas Empresariales;6;OP;4;2
+179;5;Derecho Procesal;6;OP;4;2
+180;5;Trabajo de Fin de Grado;12;TFG;4;2
+181;6;Geologia;6;OB;1;1
+182;6;Matematicas;6;OB;1;1
+183;6;Historia de la Cultura de España;6;OB;1;1
+184;6;Quimica;6;OB;1;1
+185;6;Biologia I;6;OB;1;1
+186;6;Fisica;6;OB;1;2
+187;6;Genetica;6;OB;1;2
+188;6;Biologia II;6;OB;1;2
+189;6;Informatica Aplicada;6;OB;1;2
+190;6;Idioma Moderno;6;OB;1;2
+191;6;Histologia y Organologia;6;OB;2;1
+192;6;Fisiologia y Ecofisiologia Vegetal;6;OB;2;1
+193;6;Bioestadistica;6;OB;2;1
+194;6;Microbiologia;6;OB;2;1
+195;6;Bioestadistica;6;OB;2;2
+196;6;Deontologia y Legislacion;6;OB;2;2
+197;6;Fisiologia y Ecofisiologia Animal;6;OB;2;2
+198;6;Botanica;6;OB;2;2
+199;6;Zoologia;6;OB;2;2
+200;6;Ecologia;6;OB;3;1
+201;6;Edafologia;6;OB;3;1
+202;6;Genetica Evolutiva;6;OB;3;1
+203;6;Sistemas de Informacion Geografica;6;OB;3;1
+204;6;Diseño y Toma de Datos;6;OB;3;2
+205;6;Biogeografia;6;OB;3;2
+206;6;Biologia Evolutiva;6;OP;3;2
+207;6;Ecologia del Comportamiento;6;OP;3;2
+208;6;Biologia de la Conservacion;6;OP;3;2
+209;6;Practicas Externas;6;OP;4;1
+210;6;Ecosistemas Ibericos;6;OP;4;1
+211;6;Biodiversidad de Vertebrados;6;OP;4;1
+212;6;Biodiversidad de Plantas;6;OP;4;1
+213;6;Biodiversidad de Invertebrados;6;OP;4;2
+214;6;Analisis de Experimentos;6;OP;4;2
+215;6;Salud y Enfermedad;6;OP;4;2
+216;6;Trabajo de Fin de Grado;6;TFG;4;2
+217;7;Quimica;6;OB;1;1
+218;7;Fisica;6;OB;1;1
+219;7;Matematicas I;6;OB;1;1
+220;7;Expresion Grafica;6;OB;1;1
+221;7;Ciencia e Ingenieria de Materiales;6;OB;1;1
+222;7;Matematicas II;6;OB;1;2
+223;7;Estadistica;6;OB;1;2
+224;7;Arqueologia;6;OB;1;2
+225;7;Informatica Aplicada;6;OB;1;2
+226;7;Idioma Moderno;6;OB;1;2
+227;7;Fundamentos del Comportamiento Mecanico;6;OB;2;1
+228;7;Estructura de la Materia;6;OB;2;1
+229;7;Ingenieria Quimica;6;OB;2;1
+230;7;Fundamentos de Biomateriales;6;OB;2;1
+231;7;Principios Juridicos Basicos;6;OB;2;1
+232;7;Metodos Matematicos Aplicados ;6;OB;2;2
+233;7;Elasticidad y Resistencia de Materiales;6;OB;2;2
+234;7;Microestructura y Transformaciones de Fase;6;OB;2;2
+235;7;Ingenieria Electrica y Electronica;6;OB;2;2
+236;7;Administracion y Direccion de Empresas;6;OB;3;1
+237;7;Obtencion de Materiales;6;OB;3;1
+238;7;Comportamiento Electronico de los Materiales;6;OB;3;1
+239;7;Diseño Mecanico;6;OB;3;1
+240;7;Materiales Metalicos;6;OB;3;2
+241;7;Materiales Ceramicos;6;OB;3;2
+242;7;Corrosion de los Metales;6;OP;3;2
+243;7;Materiales Compuestos;6;OP;3;2
+244;7;Materiales Polimericos;6;OP;3;2
+245;7;Procesado de Materiales y Superficies;6;OP;4;1
+246;7;Reciclado de Materiales;6;OP;4;1
+247;7;Proteccion Contra la Corrosion;6;OP;4;1
+248;7;Aplicación de Materiales;6;OP;4;1
+249;7;Fabricacion de Materiales Compuestos;6;OP;4;2
+250;7;Proyectos de Ingenieria;6;OP;4;2
+251;7;Selección de Materiales;6;OP;4;2
+252;7;Trabajo de Fin de Grado;12;TFG;4;2
+253;8;Matematicas I;6;OB;1;1
+254;8;Fisica I;6;OB;1;1
+255;8;Quimica General;6;OB;1;1
+256;8;Introduccion a la Ingenieria Quimica;6;OB;1;1
+257;8;Expresion Grafica;6;OB;1;1
+258;8;Informatica Aplicada;6;OB;1;2
+259;8;Matematicas II;6;OB;1;2
+260;8;Fisica II;6;OB;1;2
+261;8;Quimica Organica;6;OB;1;2
+262;8;Humanidades;6;OB;1;2
+263;8;Estadistica;6;OB;2;1
+264;8;Idioma Moderno;6;OB;2;1
+265;8;Quimica Inorganica;6;OB;2;1
+266;8;Quimica Analitica;6;OB;2;1
+267;8;Quimica Fisica;6;OB;2;2
+268;8;Operaciones Basicas;6;OB;2;2
+269;8;Metodos Matematicos en Ingenieria Quimica;6;OB;2;2
+270;8;Administracion y Direccion de Empresas;6;OB;2;2
+271;8;Termodinamica Aplicada;6;OB;2;2
+272;8;Principios Juridicos Basicos;6;OB;3;1
+273;8;Ingenieria de Fluidos;6;OB;3;1
+274;8;Experimentacion I;6;OB;3;1
+275;8;Ingenieria de la Reaccion Quimica;6;OB;3;1
+276;8;Ingenieria de Materiales;6;OB;3;1
+277;8;Ingenieria Electrica y Electronica;6;OB;3;2
+278;8;Experimentacion II;6;OP;3;2
+279;8;Control de Procesos Quimicos;6;OP;3;2
+280;8;Ingenieria y Gestion Ambiental;6;OP;3;2
+281;8;Ingenieria de Proceso y Producto;6;OP;4;1
+282;8;Operaciones de Separacion;6;OP;4;1
+283;8;Proyectos de Ingenieria;6;OP;4;1
+284;8;Diseño Mecanico de Equipos;6;OP;4;1
+285;8;Tratamiento de Residuos;6;OP;4;1
+286;8;Optimizacion de Procesos Quimicos;6;OP;4;2
+287;8;Practicas Externas;6;OP;4;2
+288;8;Trabajo de Fin de Grado;12;TFG;4;2
+289;9;Algebra Lineal;6;OB;1;1
+290;9;Ecuaciones Diferenciales;6;OB;1;1
+291;9;Calculo I;6;OB;1;1
+292;9;Expresion Grafica;6;OB;1;1
+293;9;Fisica I;6;OB;1;1
+294;9;Informatica;6;OB;1;2
+295;9;Analisis de Circuitos;6;OB;1;2
+296;9;Calculo II;6;OB;1;2
+297;9;Fisica II;6;OB;1;2
+298;9;Quimica;6;OB;1;2
+299;9;Sistemas Mecanicos;6;OB;1;2
+300;9;Ciencia de los Materiales;6;OB;2;1
+301;9;Electronica Analogica;6;OB;2;1
+302;9;Electronica Digital;6;OB;2;1
+303;9;Estadistica;6;OB;2;1
+304;9;Ingenieria Termica;6;OB;2;1
+305;9;Economia de la Empresa;6;OB;2;2
+306;9;Informatica Industrial;6;OB;2;2
+307;9;Ingenieria de Control I;6;OB;2;2
+308;9;Mecanica de Fluidos;6;OB;2;2
+309;9;Tecnologia Electronica;6;OB;3;1
+310;9;Automatizacion;6;OB;3;1
+311;9;Ingenieria de Control II;6;OB;3;1
+312;9;Maquinas Electricas;6;OB;3;1
+313;9;Sistemas Electronicos Digitales;6;OB;3;2
+314;9;Electronica de Potencia;6;OP;3;2
+315;9;Ingenieria de Control Electronico;6;OP;3;2
+316;9;Instrumentacion Electronica;6;OP;3;2
+317;9;Resistencia de Materiales;6;OP;3;2
+318;9;Proyectos de Ingenieria;6;OP;4;1
+319;9;Sistemas de Produccion Industrial;6;OP;4;1
+320;9;Sistemas Robotizados;6;OP;4;1
+321;9;Programacion ;6;OP;4;2
+322;9;Calculo III;6;OP;4;2
+323;9;Optimizacion de Recursos;6;OP;4;2
+324;9;Trabajo de Fin de Grado;12;TFG;4;2
+325;10;Geologia;6;OB;1;1
+326;10;Biologia;6;OB;1;1
+327;10;Quimica ;6;OB;1;1
+328;10;Fisica;6;OB;1;1
+329;10;Matematicas I;6;OB;1;1
+330;10;Matematicas II;6;OB;1;2
+331;10;Informatica Aplicada;6;OB;1;2
+332;10;Principios Juridicos Basicos;6;OB;1;2
+333;10;Deontologia Profesional;6;OB;1;2
+334;10;Igualdad;6;OB;1;2
+335;10;Matematicas III;6;OB;2;1
+336;10;Mecanica Clasica;6;OB;2;1
+337;10;Quimica Organica;6;OB;2;1
+338;10;Bioquimica y Genetica;6;OB;2;1
+339;10;Historia de la Ciencia;6;OB;2;1
+340;10;Electromagnetismo;6;OB;2;2
+341;10;Optica;6;OB;2;2
+342;10;Idioma Moderno;6;OB;2;2
+343;10;Biologia Celular;6;OB;2;2
+344;10;Mineralogia;6;OB;3;1
+345;10;Botanica;6;OB;3;1
+346;10;Zoologia;6;OB;3;1
+347;10;Geodinamica Interna;6;OB;3;1
+348;10;Quimica Analitica;6;OB;3;1
+349;10;Quimica Inorganica;6;OB;3;2
+350;10;Termodinamica;6;OP;3;2
+351;10;Acustica y Fluidos;6;OP;3;2
+352;10;Fisica Cuantica;6;OP;3;2
+353;10;Geodinamica Externa;6;OP;4;1
+354;10;Quimica Fisica;6;OP;4;1
+355;10;Quimica Avanzada;6;OP;4;1
+356;10;Hidrologia e Hidrogeologia;6;OP;4;1
+357;10;Biologia Evolutiva;6;OP;4;2
+358;10;Practicas Externas;6;OP;4;2
+359;10;Fisica de los Sistemas Complejos;6;OP;4;2
+360;10;Trabajo de Fin de Grado;12;TFG;4;2
+361;11;Epidemiologia;6;OB;1;1
+362;11;Anatomia Humana;6;OB;1;1
+363;11;Biologia Molecular;6;OB;1;1
+364;11;Biologia Celular;6;OB;1;1
+365;11;Histologia Humana;6;OB;1;1
+366;11;Psicologia General;6;OB;1;2
+367;11;Enfermeria Social;6;OB;1;2
+368;11;Genero y Salud;6;OB;1;2
+369;11;Fisiologia Humana General;6;OB;1;2
+370;11;Deontologia Profesional;6;OB;1;2
+371;11;Legislacion Sanitaria;6;OB;2;1
+372;11;Fundamentos Metodologicos;6;OB;2;1
+373;11;Cuidados Basicos de Enfermeria;6;OB;2;1
+374;11;Enfermeria Clinica I;6;OB;2;1
+375;11;Fisiopatologia del Ciclo Vital;6;OB;2;1
+376;11;Idioma Moderno;6;OB;2;2
+377;11;Salud Publica;6;OB;2;2
+378;11;Farmacologia;6;OB;2;2
+379;11;Nutricion y Dietetica;6;OB;2;2
+380;11;Cuidados en la Administracion de Productos Sanitarios;6;OB;3;1
+381;11;Urgencias en Enfermeria;6;OB;3;1
+382;11;Enfermeria Clinica II;6;OB;3;1
+383;11;Historia de la Enfermeria;6;OB;3;1
+384;11;Enfermeria Obstetrica y Ginecologia;6;OB;3;2
+385;11;Enfermeria Neonatologica;6;OB;3;2
+386;11;Enfermeria Pediatrica;6;OP;3;2
+387;11;Enfermeria Clinica III;6;OP;3;2
+388;11;Metodologia Avanzada de Cuidados;6;OP;3;2
+389;11;Enfermeria Psiquiatrica;6;OP;3;2
+390;11;Gestion de los Servicios de Enfermeria;6;OP;4;1
+391;11;Cuidados de Enfermeria a la Familia;6;OP;4;1
+392;11;Cuidados de Enfermeria a la Comunidad;6;OP;4;1
+393;11;Cuidados Paliativos;6;OP;4;1
+394;11;Enfermeria Geriatrica;6;OP;4;2
+395;11;Gerontologia;6;OP;4;2
+396;11;Trabajo de Fin de Grado;12;TFG;4;2
+397;12;Anatomia Humana I;6;OB;1;1
+398;12;Bioquimica y Biologia Molecular;6;OB;1;1
+399;12;Biologia Celular;6;OB;1;1
+400;12;Psicologia General;6;OB;1;1
+401;12;Bioestadistica;6;OB;1;1
+402;12;Genetica;6;OB;1;2
+403;12;Epidemiologia;6;OB;1;2
+404;12;Anatomia Humana II;6;OB;1;2
+405;12;Fisiologia Humana ;6;OB;1;2
+406;12;Histologia Humana;6;OB;1;2
+407;12;Radiologia General;6;OB;2;1
+408;12;Patologia General;6;OB;2;1
+409;12;Microbiologia;6;OB;2;1
+410;12;Parasitologia e Inmunologia Humana;6;OB;2;1
+411;12;Farmacologia;6;OB;2;1
+412;12;Anatomia Patologica;6;OB;2;2
+413;12;Nutricion y Dietetica;6;OB;2;2
+414;12;Cirugia General;6;OB;2;2
+415;12;Medicina Fisica y Rehabilitacion;6;OB;2;2
+416;12;Oftalmologia;6;OB;3;1
+417;12;Patologia Medico-Quirurgica;6;OB;3;1
+418;12;Hematologia;6;OB;3;1
+419;12;Otorrinolaringologia;6;OB;3;1
+420;12;Practicas Clinicas I;6;OB;3;1
+421;12;Pediatria;6;OP;3;2
+422;12;Obstetricia;6;OP;3;2
+423;12;Dermatologia;6;OP;3;2
+424;12;Psiquiatria;6;OP;3;2
+425;12;Medicina Forense;6;OP;3;2
+426;12;Toxicologia;6;OP;4;1
+427;12;Medicina Preventiva;6;OP;4;1
+428;12;Salud Publica;6;OP;4;1
+429;12;Practicas Clinicas II;6;OP;4;2
+430;12;Practicas Clinicas III;6;OP;4;2
+431;12;Trabajo de Fin de Grado;12;TFG;4;2
+432;13;Anatomia Humana;6;OB;1;1
+433;13;Fisiologia Humana;6;OB;1;1
+434;13;Psicologia General;6;OB;1;1
+435;13;Humanidades en las Profesiones Sanitarias;6;OB;1;1
+436;13;Biologia Celular;6;OB;1;1
+437;13;Histologia Humana;6;OB;1;2
+438;13;Fundamentos de Fisioterapia;6;OB;1;2
+439;13;Deontologia Profesional;6;OB;1;2
+440;13;Legislacion Sanitaria;6;OB;1;2
+441;13;Biomecanica del Aparato Locomotor;6;OB;1;2
+442;13;Idioma Moderno;6;OB;2;1
+443;13;Valoracion en Fisioterapia;6;OB;2;1
+444;13;Patologia Medica;6;OB;2;1
+445;13;Cinesiterapia;6;OB;2;1
+446;13;Patologia Quirurgica;6;OB;2;1
+447;13;Metodos Especificos de Intervencion en Fisioterapia I;6;OB;2;2
+448;13;Procedimientos Generales en Fisioterapia I;6;OB;2;2
+449;13;Practicum I;6;OB;2;2
+450;13;Salud Publica;6;OB;2;2
+451;13;Administracion Sanitaria;6;OB;3;1
+452;13;Fisioterapia Geriatrica;6;OB;3;1
+453;13;Metodos Especificos de Intervencion en Fisioterapia II;6;OB;3;1
+454;13;Fisioterapia Aplicada al Aparato Locomotor;6;OB;3;1
+455;13;Procedimientos Generales en Fisioterapia II;6;OB;3;1
+456;13;Fisioterapia Comunitaria;6;OB;3;2
+457;13;Fisioterapia Neurologica;6;OP;3;2
+458;13;Practicum II;6;OP;3;2
+459;13;Metodos Especificos de Intervencion en Fisioterapia III;6;OP;3;2
+460;13;Fisioterapia Cardiovascular;6;OP;4;1
+461;13;Afecciones Medico-Quirurgicas;6;OP;4;1
+462;13;Fisiopatologia;6;OP;4;1
+463;13;Estancias Clinicas Tuteladas I;6;OP;4;1
+464;13;Estancias Clinicas Tuteladas II;6;OP;4;2
+465;13;Estancias Clinicas Tuteladas III;6;OP;4;2
+466;13;Bioquimica;6;OP;4;2
+467;13;Trabajo de Fin de Grado;12;TFG;4;2
+468;14;Introduccion a la Psicologia;6;OB;1;1
+469;14;Fundamentos de Psicologia;6;OB;1;1
+470;14;Matematica y Metodologia I;6;OB;1;1
+471;14;Biologia Molecular;6;OB;1;1
+472;14;Biologia Celular;6;OB;1;1
+473;14;Epistemologia;6;OB;1;2
+474;14;Historia de la Psicologia;6;OB;1;2
+475;14;Deontologia y Etica para la Psicologia;6;OB;1;2
+476;14;Fisiologia;6;OB;1;2
+477;14;Psicologia del Aprendizaje;6;OB;1;2
+478;14;Anatomia Humana;6;OB;2;1
+479;14;Herramientas para Ejercer la Psicologia;6;OB;2;1
+480;14;Idioma Moderno;6;OB;2;1
+481;14;Fundamentos de Psicologia II;6;OB;2;1
+482;14;Fundamentos de Psicobiologia;6;OB;2;1
+483;14;Psicologia de la Percepcion y la Atencion;6;OB;2;2
+484;14;Psicologia del Ciclo Vital I;6;OB;2;2
+485;14;Psicobiologia de la Emocion;6;OB;2;2
+486;14;Psicologia Social;6;OB;2;2
+487;14;Psicologia Fisiologica;6;OB;3;1
+488;14;Psicofisiologia;6;OB;3;1
+489;14;Neurociencia;6;OB;3;1
+490;14;Psicologia de la Memoria;6;OB;3;1
+491;14;Psicologia del Ciclo Vital II;6;OB;3;1
+492;14;Psicologia del Pensamiento;6;OB;3;2
+493;14;Metodos de Investigacion en Psicologia;6;OP;3;2
+494;14;Evaluacion Psicologica;6;OP;3;2
+495;14;Psicopatologia;6;OP;3;2
+496;14;Fundamentos de Intervencion Conductual;6;OP;4;1
+497;14;Psicologia del Trabajo;6;OP;4;1
+498;14;Evaluacion Neuropsicologica;6;OP;4;1
+499;14;Intervencion en Psicologia;6;OP;4;1
+500;14;Psicologia de la Vejez;6;OP;4;2
+501;14;Psicologia de los Problemas Sociales;6;OP;4;2
+502;14;Psicologia de los Grupos;6;OP;4;2
+503;14;Trabajo de Fin de Grado;12;TFG;4;2
+504;15;Anatomia Humana;6;OB;1;1
+505;15;Fisiologia Humana;6;OB;1;1
+506;15;Bioestadistica;6;OB;1;1
+507;15;Introduccion a la Clinica del Paciente;6;OB;1;1
+508;15;Bioquimica Humana;6;OB;1;1
+509;15;Psicologia;6;OB;1;1
+510;15;Citologia e Histologia Humana;6;OB;1;2
+511;15;Idioma Moderno;6;OB;1;2
+512;15;Radiologia Bucal;6;OB;1;2
+513;15;Farmacologia;6;OB;1;2
+514;15;Materiales Odontologicos;6;OB;1;2
+515;15;Patologia Medica General;6;OB;2;1
+516;15;Patologia Quirurgica General;6;OB;2;1
+517;15;Microbiologia General y Bucal;6;OB;2;1
+518;15;Anatomia Patologica;6;OB;2;1
+519;15;Operatoria Dental;6;OB;2;1
+520;15;Protesis Dental I;6;OB;2;2
+521;15;Patologia y Terapeutica Dental I;6;OB;2;2
+522;15;Ortodoncia I;6;OB;2;2
+523;15;Patologia Quirurgica Bucal;6;OB;2;2
+524;15;Periodoncia I;6;OB;3;1
+525;15;Protesis Dental II;6;OB;3;1
+526;15;Patologia y Terapeutica Dental II;6;OB;3;1
+527;15;Ortodoncia II;6;OB;3;1
+528;15;Odontopediatria;6;OB;3;1
+529;15;Historia de la Odontologia;6;OP;3;2
+530;15;Odontologia Forense I;6;OP;3;2
+531;15;Odontologia Legal;6;OP;3;2
+532;15;Clinica Odontologica de Pacientes Especiales;6;OP;3;2
+533;15;Gerodontologia I;6;OP;4;1
+534;15;Clinica Odontologica de Adultos;6;OP;4;1
+535;15;Clinica Odontologica Infantil;6;OP;4;1
+536;15;Protesis Dental III;6;OP;4;2
+537;15;Gerodontologia II;6;OP;4;2
+538;15;Odontologia Forense II;6;OP;4;2
+539;15;Trabajo de Fin de Grado;12;TFG;4;2
+540;16;Estadistica;6;OB;1;1
+541;16;Logica;6;OB;1;1
+542;16;Matematica Discreta;6;OB;1;1
+543;16;Algebra;6;OB;1;1
+544;16;Fisica de la Informatica;6;OB;1;1
+545;16;Introduccion a Programacion;6;OB;1;2
+546;16;Calculo;6;OB;1;2
+547;16;Principios Juridicos Basicos;6;OB;1;2
+548;16;Estructuras de Datos;6;OB;1;2
+549;16;Fundamentos de Computadores;6;OB;1;2
+550;16;Historia, Cultura y Sociedad;6;OB;2;1
+551;16;Idioma Moderno;6;OB;2;1
+552;16;Programacion Orientada a Objetos;6;OB;2;1
+553;16;Estructura de Computadores;6;OB;2;1
+554;16;Bases de Datos;6;OB;2;1
+555;16;Teoria de Automatas;6;OB;2;2
+556;16;Lenguajes Formales;6;OB;2;2
+557;16;Organización y Arquitectura de Computadores;6;OB;2;2
+558;16;Metodos Operativos;6;OB;2;2
+559;16;Metodos Estadisticos de Gestion;6;OB;3;1
+560;16;Redes de Computadores;6;OB;3;1
+561;16;Diseño y Analisis de Algortimos;6;OB;3;1
+562;16;Ingenieria del Software;6;OB;3;1
+563;16;Seguridad Informatica;6;OB;3;1
+564;16;Interaccion Persona-Ordenador;6;OB;3;2
+565;16;Programacion Declarativa;6;OP;3;2
+566;16;Estructuras de Datos Avanzadas;6;OP;3;2
+567;16;Sistemas Operativos;6;OP;3;2
+568;16;Sistemas Empotrados;6;OP;4;1
+569;16;Inteligencia Artificial;6;OP;4;1
+570;16;Sistemas Distribuidos;6;OP;4;1
+571;16;Procesadores de Lenguajes;6;OP;4;1
+572;16;Informatica Grafica;6;OP;4;2
+573;16;Vision Artificial;6;OP;4;2
+574;16;Algoritmos Avanzados;6;OP;4;2
+575;16;Trabajo de Fin de Grado;12;TFG;4;2
+576;17;Estadistica;6;OB;1;1
+577;17;Logica;6;OB;1;1
+578;17;Matematica Discreta;6;OB;1;1
+579;17;Tecnologia de Computadores;6;OB;1;1
+580;17;Fisica de los Computadores;6;OB;1;1
+581;17;Introduccion a la Programacion;6;OB;1;2
+582;17;Estructura de Computadores;6;OB;1;2
+583;17;Calculo;6;OB;1;2
+584;17;Estructuras de Datos;6;OB;1;2
+585;17;Algebra;6;OB;1;2
+586;17;Filosofia del Hombre y la Ciencia;6;OB;2;1
+587;17;Idioma Moderno;6;OB;2;1
+588;17;Programacion Orientada a Objetos;6;OB;2;1
+589;17;Organización de Computadores;6;OB;2;1
+590;17;Principios Juridicos Basicos;6;OB;2;1
+591;17;Bases de Datos;6;OB;2;2
+592;17;Arquitectura de Computadores;6;OB;2;2
+593;17;Metodos Operativos;6;OB;2;2
+594;17;Metodos Estadisticos de Gestion;6;OB;2;2
+595;17;Redes de Computadores;6;OB;3;1
+596;17;Sistemas Operativos;6;OB;3;1
+597;17;Fundamentos de Diseño de Software;6;OB;3;1
+598;17;Ampliacion de Redes de Computadores;6;OB;3;1
+599;17;Ampliacion de Sistemas Operativos;6;OB;3;1
+600;17;Programacion Concurrente;6;OB;3;2
+601;17;Lenguajes de Programacion;6;OP;3;2
+602;17;Desarrollo de Aplicaciones Distribuidas;6;OP;3;2
+603;17;Sistemas Inteligentes;6;OP;3;2
+604;17;Direccion y Gestion de Proyectos;6;OP;4;1
+605;17;Computacion de Altas Prestaciones;6;OP;4;1
+606;17;Interaccion Persona-Ordenador;6;OP;4;1
+607;17;Graficos por Computador;6;OP;4;1
+608;17;Seguridad Informatica;6;OP;4;2
+609;17;Laboratorio de Dispositivos Moviles;6;OP;4;2
+610;17;Practicas Externas;6;OP;4;2
+611;17;Trabajo de Fin de Grado;12;TFG;4;2
+612;18;Calculo;6;OB;1;1
+613;18;Analisis Diferencial;6;OB;1;1
+614;18;Algebra Lineal;6;OB;1;1
+615;18;Matematica Discreta;6;OB;1;1
+616;18;Fundamentos de la Programacion;6;OB;1;1
+617;18;Organización Empresarial;6;OB;1;2
+618;18;Expresion Oral y Escrita;6;OB;1;2
+619;18;Señales y Sistemas;6;OB;1;2
+620;18;Fundamentos Fisicos;6;OB;1;2
+621;18;Arquitectura de Redes;6;OB;1;2
+622;18;Sistemas y Circuitos;6;OB;2;1
+623;18;Normativa y Deontologia;6;OB;2;1
+624;18;Idioma Moderno;6;OB;2;1
+625;18;Estadistica;6;OB;2;1
+626;18;Campos Electromagneticos;6;OB;2;1
+627;18;Electronica;6;OB;2;2
+628;18;Radiacion y Propagacion;6;OB;2;2
+629;18;Sistemas Telematicos;6;OB;2;2
+630;18;Teoria de la Comunicación;6;OB;2;2
+631;18;Sistemas Digitales;6;OB;3;1
+632;18;Software de Sistemas;6;OB;3;1
+633;18;Arquitectura de Computadores;6;OB;3;1
+634;18;Sistemas de Telecomunicacion;6;OB;3;1
+635;18;Comunicaciones Digitales I;6;OB;3;1
+636;18;Procesamiento de Señales;6;OB;3;2
+637;18;Simulacion de las Comunicaciones;6;OP;3;2
+638;18;Comunicaciones de Banda Ancha;6;OP;3;2
+639;18;Ampliacion de Sistemas de Telecomunicacion;6;OP;3;2
+640;18;Radionavegacion;6;OP;4;1
+641;18;Microondas;6;OP;4;1
+642;18;Comunicaciones por Satelite;6;OP;4;1
+643;18;Comunicaciones Sectoriales;6;OP;4;1
+644;18;Investigacion Operativa;6;OP;4;2
+645;18;Comunicaciones Digitales II;6;OP;4;2
+646;18;Practicas Externas;6;OP;4;2
+647;18;Trabajo de Fin de Grado;12;TFG;4;2
+648;19;Representacion Arquitectonica;6;OB;1;1
+649;19;Dibujo del Natural;6;OB;1;1
+650;19;Comunicación Grafica;6;OB;1;1
+651;19;Historia del Arte y la Arquitectura I;6;OB;1;1
+652;19;Matematicas I;6;OB;1;1
+653;19;Sistemas Informaticos Aplicados;6;OB;1;2
+654;19;Tipologias Arquitectonicas;6;OB;1;2
+655;19;Historia del Arte y la Arquitectura II;6;OB;1;2
+656;19;Matematicas II;6;OB;1;2
+657;19;Materiales de Construccion;6;OB;1;2
+658;19;Introduccion a Proyectos;6;OB;2;1
+659;19;Comunicación y Representacion de Proyectos;6;OB;2;1
+660;19;Idioma Moderno;6;OB;2;1
+661;19;Deontologia;6;OB;2;1
+662;19;Historia Social y Urbana;6;OB;2;1
+663;19;Vanguardias y Arquitectura;6;OB;2;2
+664;19;Fisica Aplicada a Estructuras;6;OB;2;2
+665;19;Fisica Basica;6;OB;2;2
+666;19;Organización y Gestion de la Actividad;6;OB;2;2
+667;19;Introduccion al Urbanismo;6;OB;3;1
+668;19;Sistemas Constructivos I;6;OB;3;1
+669;19;Diseño de Instalaciones I;6;OB;3;1
+670;19;Diseño de Instalaciones II;6;OB;3;1
+671;19;Introduccion al Diseño de Estructuras;6;OB;3;1
+672;19;Normativa Urbanistica;6;OB;3;2
+673;19;Dimensionamiento de Estructuras;6;OP;3;2
+674;19;Geotecnia;6;OP;3;2
+675;19;Gestion Inmobiliaria;6;OP;3;2
+676;19;Planeamiento y Diseño Urbanistico;6;OP;4;1
+677;19;Proyectos ;6;OP;4;1
+678;19;Direccion de Obra;6;OP;4;1
+679;19;Proyecto de Urbanismo;6;OP;4;1
+680;19;Calculo Avanzado de Estructuras;6;OP;4;2
+681;19;Entorno Social y Urbano;6;OP;4;2
+682;19;Gestion de Proyectos;6;OP;4;2
+683;19;Trabajo de Fin de Grado;12;TFG;4;2
+684;20;Diseño Digital 2D;6;OB;1;1
+685;20;Fisica para Videojuegos;6;OB;1;1
+686;20;Matematica Discreta;6;OB;1;1
+687;20;Narracion;6;OB;1;1
+688;20;Guion;6;OB;1;1
+689;20;Programacion Visual;6;OB;1;2
+690;20;Diseño Digital 3D;6;OB;1;2
+691;20;Estructuras de Datos;6;OB;1;2
+692;20;Fundamentos del Diseño;6;OB;1;2
+693;20;Modelado Geometrico;6;OB;1;2
+694;20;Multimedia;6;OB;2;1
+695;20;Principios Juridicos Basicos;6;OB;2;1
+696;20;Bases de Datos;6;OB;2;1
+697;20;Dibujo Artistico;6;OB;2;1
+698;20;Estadistica;6;OB;2;1
+699;20;Fundamentos de Tecnologia de Videojuegos;6;OB;2;2
+700;20;Informatica Grafica;6;OB;2;2
+701;20;Programacion Avanzada;6;OB;2;2
+702;20;Arquitecturas Graficas;6;OB;2;2
+703;20;Empresa y Videojuegos;6;OB;3;1
+704;20;Idioma Moderno;6;OB;3;1
+705;20;Animacion 3D;6;OB;3;1
+706;20;Desarrollo de Juegos con Inteligencia Artificial;6;OB;3;1
+707;20;Ingenieria de Videojuegos;6;OB;3;1
+708;20;Juegos en Red;6;OB;3;2
+709;20;Procesadores Graficos Avanzados;6;OP;3;2
+710;20;Entornos Multijugador;6;OP;3;2
+711;20;Personajes y Escenarios;6;OP;3;2
+712;20;Sonido y Musica para Videojuegos;6;OP;4;1
+713;20;Algoritmos para Juegos;6;OP;4;1
+714;20;Comportamiento de Personajes;6;OP;4;1
+715;20;Gestion y Direccion de Proyectos;6;OP;4;1
+716;20;Diseño Visual y Arte Final;6;OP;4;2
+717;20;Juegos para Web;6;OP;4;2
+718;20;Redes Sociales;6;OP;4;2
+719;20;Trabajo de Fin de Grado;12;TFG;4;2
+720;21;Ultimas Tendencias del Arte;6;OB;1;1
+721;21;Historia de la Filosofia Antigua I;6;OB;1;1
+722;21;Etica I;6;OB;1;1
+723;21;Historia Antigua y Medieval;6;OB;1;1
+724;21;Antropologia Social I;6;OB;1;1
+725;21;Introduccion a la Teoria Literaria;6;OB;1;2
+726;21;Etica II;6;OB;1;2
+727;21;Historia Moderna y Contemporanea;6;OB;1;2
+728;21;Historia de la Filosofia Antigua II;6;OB;1;2
+729;21;Antropologia Social II;6;OB;1;2
+730;21;Historia de la Filosofia Medieval y Renacentista I;6;OB;2;1
+731;21;Antropologia Filosofica I;6;OB;2;1
+732;21;Logica I;6;OB;2;1
+733;21;Filosofia Politica I;6;OB;2;1
+734;21;Teoria del Concimiento I;6;OB;2;1
+735;21;Logica II;6;OB;2;2
+736;21;Antropologia Filosofica II;6;OB;2;2
+737;21;Historia General de la Ciencia I;6;OB;2;2
+738;21;Teoria del Conocimiento II;6;OB;2;2
+739;21;Filosofia Politica II;6;OB;3;1
+740;21;Historia de la Filosofia Medieval y Renacentista II;6;OB;3;1
+741;21;Historia de la Filosofia Moderna I;6;OB;3;1
+742;21;Filosofia del Lenguaje I;6;OB;3;1
+743;21;Metafisica I;6;OB;3;1
+744;21;Filosofia de la Religion I;6;OB;3;2
+745;21;Estetica y Teoria del Arte I;6;OP;3;2
+746;21;Filosofia del Lenguaje II;6;OP;3;2
+747;21;Metafisica II;6;OP;3;2
+748;21;Filosofia de la Religion II;6;OP;4;1
+749;21;Estetica y Teoria del Arte II;6;OP;4;1
+750;21;Filosofia de la Ciencia II;6;OP;4;1
+751;21;Historia de la Filosofia Moderna II;6;OP;4;1
+752;21;Aleman;6;OP;4;2
+753;21;Frances;6;OP;4;2
+754;21;Italiano;6;OP;4;2
+755;21;Trabajo de Fin de Grado;12;TFG;4;2
+756;22;Historia del Arte;6;OB;1;1
+757;22;Latin I;6;OB;1;1
+758;22;Lecturas Españolas Contemporaneas;6;OB;1;1
+759;22;Lengua Catalana;6;OB;1;1
+760;22;Uso Correcto del Español;6;OB;1;1
+761;22;Teoria de la Literatura;6;OB;1;2
+762;22;Fonetica Española;6;OB;1;2
+763;22;Fonologia Española;6;OB;1;2
+764;22;Lecturas Contemporaneas Hispanoamericanas;6;OB;1;2
+765;22;Morfologia Española;6;OB;1;2
+766;22;Lingüística;6;OB;2;1
+767;22;Lectura del Texto Literario;6;OB;2;1
+768;22;Lexicografia Española;6;OB;2;1
+769;22;Oralidad y Escritura en la Edad Media;6;OB;2;1
+770;22;Semantica Española;6;OB;2;1
+771;22;Sintaxis Española;6;OB;2;2
+772;22;Diacronia de la Lengua Española;6;OB;2;2
+773;22;Ficcion y Novela en los Siglos de Oro;6;OB;2;2
+774;22;Ilustracion Y Romanticismo en la Literatura Española;6;OB;2;2
+775;22;Pragmatica Aplicada al Español;6;OB;3;1
+776;22;Literatura y Modernidad en America Latina;6;OB;3;1
+777;22;Lectura de Textos Medievales;6;OB;3;1
+778;22;Dialectologia;6;OB;3;1
+779;22;Comentario Lingüistico;6;OB;3;2
+780;22;Español Coloquial;6;OB;3;2
+781;22;Historiografia Lingüística del Español;6;OP;3;2
+782;22;La Novela Española del Siglo XIX;6;OP;3;2
+783;22;Teatro Clasico en España;6;OP;4;1
+784;22;Comentario Literario;6;OP;4;1
+785;22;Lengua Gallega I;6;OP;4;1
+786;22;Lengua Astur I;6;OP;4;1
+787;22;Lengua Vasca I;6;OP;4;1
+788;22;Lengua Gallega II;6;OP;4;2
+789;22;Lengua Astur II;6;OP;4;2
+790;22;Lengua Vasca II;6;OP;4;2
+791;22;Trabajo de Fin de Grado;12;TFG;4;2
+792;23;Fundamentos del Periodismo;6;OB;1;1
+793;23;Redaccion Periodistica;6;OB;1;1
+794;23;Procesos de Comunicación;6;OB;1;1
+795;23;Teorias de la Comunicación;6;OB;1;1
+796;23;Lengua Española;6;OB;1;1
+797;23;Diseño de la Informacion Periodistica;6;OB;1;2
+798;23;Teoria de la Informacion;6;OB;1;2
+799;23;Historia del Mundo Actual;6;OB;1;2
+800;23;Estructura Social Contemporanea;6;OB;1;2
+801;23;Nuevas Tecnologias;6;OB;1;2
+802;23;Idioma Moderno;6;OB;2;1
+803;23;Generos Informativos;6;OB;2;1
+804;23;Lenguaje;6;OB;2;1
+805;23;Tecnologias Audiovisuales;6;OB;2;1
+806;23;Documentacion Informativa;6;OB;2;1
+807;23;Principios de Economia;6;OB;2;2
+808;23;Produccion de la Informacion Audiovisual;6;OB;2;2
+809;23;Historia del Periodismo;6;OB;2;2
+810;23;Derecho de la Comunicación;6;OB;2;2
+811;23;Estructura del Sistema de Medios;6;OB;3;1
+812;23;Generos Informativos en Radio y Television;6;OB;3;1
+813;23;Opinion Publica;6;OB;3;1
+814;23;Investigacion de Audiencias;6;OB;3;1
+815;23;Historia de la España Actual;6;OB;3;1
+816;23;Produccion de Programas;6;OB;3;2
+817;23;Periodismo Multimedia I;6;OP;3;2
+818;23;Periodismo de Analisis y Opinion;6;OP;3;2
+819;23;Empresa Periodistica;6;OP;3;2
+820;23;Metodos de Investigacion en Comunicación;6;OP;4;1
+821;23;Periodismo Infografico;6;OP;4;1
+822;23;Comunicación Politica;6;OP;4;1
+823;23;Produccion en Programas de Television;6;OP;4;1
+824;23;Produccion en Programas de Radio;6;OP;4;2
+825;23;Periodismo y Literatura;6;OP;4;2
+826;23;Periodismo Multimedia II;6;OP;4;2
+827;23;Trabajo de Fin de Grado;12;TFG;4;2
+828;24;Aleman I;6;OB;1;1
+829;24;Frances I;6;OB;1;1
+830;24;Historia de los Paises de Habla Inglesa;6;OB;1;1
+831;24;Ingles I;6;OB;1;1
+832;24;Lengua Española;6;OB;1;1
+833;24;Aleman II;6;OB;1;2
+834;24;Analisis Literario de Textos en Ingles;6;OB;1;2
+835;24;Frances II;6;OB;1;2
+836;24;Ingles Academico;6;OB;1;2
+837;24;Ingles II;6;OB;1;2
+838;24;Aleman III;6;OB;2;1
+839;24;Frances III;6;OB;2;1
+840;24;Ingles III;6;OB;2;1
+841;24;Introduccion a la Traduccion;6;OB;2;1
+842;24;Lingüística;6;OB;2;2
+843;24;Culturas de los Paises de Habla Inglesa;6;OB;2;2
+844;24;Civilizaciones de los Paises de Habla Inglesa;6;OB;2;2
+845;24;Ingles IV;6;OB;2;2
+846;24;Historia de la Lengua Inglesa;6;OB;2;2
+847;24;Narrativa Inglesa I;6;OB;3;1
+848;24;Analisis del Discurso;6;OB;3;1
+849;24;Narrativa Inglesa II;6;OB;3;1
+850;24;Narrativa Norteamericana;6;OB;3;1
+851;24;Literatura Irlandesa Antigua;6;OB;3;1
+852;24;Literatura Irlandesa Contemporanea;6;OB;3;2
+853;24;Semantica del Ingles;6;OP;3;2
+854;24;Terminologia Aplicada;6;OP;3;2
+855;24;Pragmatica de la Lengua Inglesa;6;OP;3;2
+856;24;Lengua Española Aplicada a la Traduccion;6;OP;4;1
+857;24;Lingüística Cognitiva;6;OP;4;1
+858;24;Literatura Inglesa Medieval;6;OP;4;1
+859;24;La Maldad en el Analisis de la Ficcion;6;OP;4;1
+860;24;Didactica del Ingles I;6;OP;4;2
+861;24;Didactica del Ingles II;6;OP;4;2
+862;24;Practicas Externas;6;OP;4;2
+863;24;Trabajo de Fin de Grado;12;TFG;4;2
+864;25;Lengua Española;6;OB;1;1
+865;25;Japones I;6;OB;1;1
+866;25;Coreano I;6;OB;1;1
+867;25;Chino Mandarin I;6;OB;1;1
+868;25;Geografia de Asia Oriental;6;OB;1;1
+869;25;Japones II;6;OB;1;2
+870;25;Coreano II;6;OB;1;2
+871;25;Chino Mandarin II;6;OB;1;2
+872;25;Escrituras de Asia Oriental: Caracteres;6;OB;1;2
+873;25;Literatura Española;6;OB;1;2
+874;25;Lingüística General;6;OB;2;1
+875;25;Sociedades de Asia Oriental;6;OB;2;1
+876;25;Teoria de la Literatura;6;OB;2;1
+877;25;Japones III;6;OB;2;1
+878;25;Coreano III;6;OB;2;1
+879;25;Chino Mandarin III;6;OB;2;2
+880;25;Cultura de Masas de Asia Oriental;6;OB;2;2
+881;25;Historia de la Literatura Japonesa;6;OB;2;2
+882;25;Historia de la Literatura Coreana;6;OB;2;2
+883;25;Historia de la Literatura China;6;OB;3;1
+884;25;Japones IV;6;OB;3;1
+885;25;Coreano IV;6;OB;3;1
+886;25;Chino Mandarin IV;6;OB;3;1
+887;25;Arte de Asia Oriental;6;OB;3;1
+888;25;Relaciones Internacionales;6;OB;3;2
+889;25;Nuevas Tecnologias;6;OP;3;2
+890;25;Historia de la Filosofia;6;OP;3;2
+891;25;Psicologia;6;OP;3;2
+892;25;Japones V;6;OP;4;1
+893;25;Coreano V;6;OP;4;1
+894;25;Chino Mandarin V;6;OP;4;1
+895;25;Formacion Filologica Complementaria;6;OP;4;1
+896;25;Literatura Contemporanea Japonesa;6;OP;4;2
+897;25;Literatura Contemporanea Coreana;6;OP;4;2
+898;25;Literatura Contemporanea China;6;OP;4;2
+899;25;Trabajo de Fin de Grado;12;TFG;4;2

@@ -1,0 +1,26 @@
+Id_grado;Nombre grado;Creditos totales;Id_facultad;Creditos optativos;Creditos transversales
+1;Criminologia;260;1;60;12
+2;Derecho;260;1;60;12
+3;Lengua de Signos Española;260;1;60;12
+4;Actividad Fisica del Deporte;260;1;60;12
+5;Recursos Humanos y Relaciones Sociales;260;1;60;12
+6;Biologia;260;2;60;12
+7;Ingenieria de Materiales;260;2;60;12
+8;Ingenieria Quimica;260;2;60;12
+9;Ingenieria Mecanica;260;2;60;12
+10;Ciencias Experimentales;260;2;60;12
+11;Enfermeria;260;3;60;12
+12;Medicina;260;3;60;12
+13;Fisioterapia;260;3;60;12
+14;Psicologia;260;3;60;12
+15;Odontologia;260;3;60;12
+16;Ingenieria Informatica;260;4;60;12
+17;Ingenieria de Computadores;260;4;60;12
+18;Ingenieria de Telecomunicaciones;260;4;60;12
+19;Arquitectura;260;4;60;12
+20;Desarrollo de Videojuegos;260;4;60;12
+21;Filosofia;260;5;60;12
+22;Estudios Hispanicos;260;5;60;12
+23;Periodismo;260;5;60;12
+24;Filologia Inglesa;260;5;60;12
+25;Filologia Chino;260;5;60;12
