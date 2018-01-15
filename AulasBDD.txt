@@ -1,0 +1,12 @@
+Create table "aulas"
+(
+	"id" Text NOT NULL,
+	"centro" Text NOT NULL,
+	"tipo" Text,
+	"precio" Integer NOT NULL,
+	"capacidad" Integer NOT NULL,
+ primary key ("id")
+);
+
+
+insert into aulas values ('NA1','Escuela Politécnica','Aula grande',20,50);
