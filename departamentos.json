@@ -1,0 +1,335 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Aplicación para gestionar los datos de los departamentos y profesores de la universidad.",
+    "version": "2.0.0",
+    "title": "Universidad de Villamayor. Gestión de departamentos",
+    "termsOfService": ""
+  },
+  "tags": [
+    {
+      "name": "Departamentos",
+      "description": "Gestión de Departamentos"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/Departamentos": {
+      "get": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "Obtener la información acerca de un departamento",
+        "operationId": "infoDepartamento",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idDepartamento",
+            "in": "query",
+            "description": "información del departamento a partir de su id",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid Order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "Modificar los datos correspondientes al departamento",
+        "operationId": "updateDepartamento",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "UpdateDepartamento",
+            "in": "body",
+            "description": "Se modifica el departamento",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Departamento"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "ID departamento inválido"
+          },
+          "404": {
+            "description": "Departamento not encontrado"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Departamentos/Profesores": {
+      "get": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "Se obtienen los profesores que pertenecen a un profesor determinado.",
+        "operationId": "departamentoProfesor",
+        "produces": [
+          "appplication/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idDepartamento",
+            "in": "query",
+            "description": "es necesario el id del departamento para obtener los profesores",
+            "type": "number",
+            "required": true,
+            "items": {
+              "type": "array"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "Asignar uno o varios profesores a un departamento concreto",
+        "operationId": "asignarProfesor",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idProfesor",
+            "in": "body",
+            "description": "Se modifican los profesores que pertenecen al departamento concreto",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Departamento"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "ID profesor inválido"
+          },
+          "404": {
+            "description": "profesor not encontrado"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Departamentos/Estadisticas": {
+      "get": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "Se obtienen las estadisticas que hay referente al departamento.",
+        "operationId": "obtenerEstadisticas",
+        "produces": [
+          "appplication/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idDepartamento",
+            "in": "query",
+            "description": "a partir del id del departamento podemos obtener todas las estadisticas que se han ido generando.",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Departamento/GenerarHorario": {
+      "get": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "a partir de todos los profesores pertenecientes al departamento creamos la hoja academica para repartir las horas de docencia entre los profesores existentes",
+        "operationId": "generarHorario",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idDepartamento",
+            "in": "query",
+            "description": "id del departamento",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Departamentos/CargaDocente": {
+      "get": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "obtenemos la carga docente asignada al departamento",
+        "operationId": "cargaDocente",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idDepartamento",
+            "in": "query",
+            "description": "id del departamento",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    },
+    "/Departamentos/Asignaturas": {
+      "get": {
+        "tags": [
+          "Departamentos"
+        ],
+        "summary": "se obteiene las informacion relativa a las asignaturas que pertenecen a ese departamento",
+        "operationId": "consultarAsignaturas",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "idDepartamento",
+            "in": "query",
+            "description": "id del departamento",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "invalid order"
+          },
+          "500": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Departamento": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "description": "id del departamento"
+        },
+        "nombre": {
+          "type": "string",
+          "description": "nombre del departamento"
+        },
+        "descipcion": {
+          "type": "string",
+          "description": "descripcion del departamento"
+        },
+        "zona": {
+          "type": "string",
+          "description": "zona de la universidad en la que se puede encontrar el departamento"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Más información acerca de la UVM.",
+    "url": "http://uvm.es"
+  }
+}
