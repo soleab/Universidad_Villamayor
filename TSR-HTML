@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h1>INTRODUCE EL VALOR DE CLICKS</h1>
+		<form action="." method="POST" name>
+			<input type="text" name="text">
+			<input type="submit" name="my-form" value="Send">
+		</form>
+		<!--<h1>REFRESCAR INFORMACION</h1>
+		<form action="." method="POST">
+			<input type="submit" name="refrescar" value="Refrescar">
+		</form>-->
+	</body>
+</html>
