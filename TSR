@@ -23,7 +23,7 @@ def my_form_get():
 def selec_datos2(m):
 	conn = psycopg2.connect("dbname=lab user=lab password=ubuntu16")
 	cur = conn.cursor()
-	sqlquery = "select * from info where click >= %d;" % (int(m))
+	sqlquery = "select * from info where click >= '\%s\';" % (str(m)+ ' clics')
 	cur.execute(sqlquery)
 	row = cur.fetchall()
 	lista = []
