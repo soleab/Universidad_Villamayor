@@ -1,0 +1,112 @@
+import requests
+import sys
+import psycopg2, psycopg2.extras
+import time
+
+from lxml import html
+from flask import Flask, render_template, request, redirect
+app = Flask(__name__,template_folder='Templates') 
+
+
+@app.route('/')
+def my_form():
+	res = insertar_datos()
+	return render_template("my-form.html")
+
+@app.route('/', methods=['POST'])
+def my_form_get():	
+	text = request.form['text']
+	datos = selec_datos2(str(text))
+	return datos
+	
+	
+def selec_datos2(m):
+	conn = psycopg2.connect("dbname=lab user=lab password=ubuntu16")
+	cur = conn.cursor()
+	sqlquery = "select * from info where click >= %d;" % (int(m))
+	cur.execute(sqlquery)
+	row = cur.fetchall()
+	lista = []
+	for num in row:
+		t = num[0]
+		m = num[1]
+		c = num[2]
+		f = num[3]
+		lista.append([t,m,c,f])
+	
+	final = '<h1>NOTICIAS QUE CUMPLEN LOS REQUISITOS: </h1><table style="width:100%">'
+	final = final + '<tr>' + '<th style="border: 1px solid orange; border-collapse: collapse;">' + 'TITULO' + '</th><th style="border: 1px solid orange; border-collapse: collapse;">' +'MENEOS'+ '<th><th style="border: 1px solid orange; border-collapse: collapse;">' + 'CLICKS' + '<th><th style="border: 1px solid orange; border-collapse: collapse;">' + 'FECHA ACTUALIZACION' + '</th>'+ '</tr>'
+	if lista:
+		resultado = ''
+		long = len(lista)
+		for i in range(long):
+			for j in range(4):
+				resultado = resultado + str(lista[i][j])
+				if (j==3):
+					resultado = resultado + "\n"
+			
+			final = final + '<th style="border: 1px solid orange; border-collapse: collapse;">' + str(lista[i][0]) + '</th><th style="border: 1px solid orange; border-collapse: collapse;">' +str(lista[i][1])+ '<th><th style="border: 1px solid orange; border-collapse: collapse;">' +str(lista[i][2])+ '<th><th style="border: 1px solid orange; border-collapse: collapse;">' + str(lista[i][3]) + '</th>'
+			final = final + '</tr>'
+		#print(resultado) 
+		final = final + '</table>'
+		return final
+	else:
+		return 'No hay resultados'
+	cur.close()
+	conn.close()
+
+#@app.route('/datos')
+def insertar(tit, men, cli):
+	conn = psycopg2.connect("dbname=lab user=lab password=ubuntu16")
+	cur = conn.cursor()
+	t = tit.replace("'","")
+	#Obtenemos la fecha y hora del sistema
+	ahora = time.strftime("%m/%d/%y %H:%M:%S") 
+	sqlquery = 'select * from info where Titulo= \'%s\';' %(t)
+	cur.execute(sqlquery)
+	res = cur.fetchall()
+	if (len(res)<1):
+		query = 'insert into info (titulo, meneos, click, fecha) values (\'%s\',%d,\'%s\',\'%s\');' % (t, int(men),cli, ahora)
+		cur.execute(query)
+		conn.commit()
+		print('insertado correctamente')
+	else:
+		query = 'update info set meneos = %d, click = \'%s\', fecha = \'%s\' where titulo = \'%s\';' %(int(men),cli,ahora,t)
+		print('Actualizados los valores en la base de datos')
+	cur.close()
+	conn.close()
+	return 'Todo correcto'
+	
+def insertar_datos():
+	url = "http://www.meneame.net"
+	page = download(url)
+	if page:
+		tree = html.fromstring(page.content)
+		xpath_string_titles = '//h2/a/text()'
+		xpath_string_clics = '//div[contains(@class,"clics")]/text()'
+		xpath_string_meneos = '//div[contains(@class,"votes")]/a/text()'
+		results_titles = tree.xpath(xpath_string_titles)
+		results_clics = tree.xpath(xpath_string_clics)
+		results_meneos = tree.xpath(xpath_string_meneos)
+	#print(len(results_titles))
+	lon = len(results_titles)
+	for i in range(lon):
+		insertar(results_titles[i], str(results_meneos[i]), str(results_clics[i]))
+	return 'INSERTADO CORRECTAMENTE'
+
+	
+def download(url):
+    """Returns the HTML source code from the given URL
+        :param url: URL to get the source from.
+    """
+    r = requests.get(url)
+    if r.status_code != 200:
+        sys.stderr.write("! Error {} retrieving url {}".format(r.status_code, url))
+        return None
+
+    return r
+	
+
+	
+if __name__ == '__main__':
+	app.run(host='0.0.0.0')
